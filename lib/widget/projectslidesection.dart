@@ -60,7 +60,7 @@ class _ProjectScetionState extends State<ProjectScetion> {
         ],
       ),
     );
-  }
+  } 
 }
 
 class _project_card extends StatelessWidget {
