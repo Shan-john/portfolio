@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:protfolio/Http%20service/Onwer_Api_Call.dart';
 
 import 'package:protfolio/core/constant.dart';
-import 'package:protfolio/service/apicall.dart';
+import 'package:protfolio/Http%20service/Project_ApiCall.dart';
+import 'package:protfolio/core/function.dart';
+import 'package:protfolio/screen/mainScreen.dart';
 
 class ProjectScetion extends StatefulWidget {
   ProjectScetion({super.key});
@@ -18,10 +21,11 @@ class _ProjectScetionState extends State<ProjectScetion> {
     Future.delayed(
       const Duration(seconds: 2),
       () async {
+       
         setState(() {});
       },
     );
-    super.initState(); 
+    super.initState();
   }
 
   @override
@@ -53,14 +57,14 @@ class _ProjectScetionState extends State<ProjectScetion> {
                     wedsite: project.homepage,
                     language: project.language,
                     visibility: project.visibility,
-                    projectimage: projectimage[index%projectimage.length],
+                    projectimage: projectimage[index % projectimage.length],
                   );
                 }),
           )
         ],
       ),
     );
-  } 
+  }
 }
 
 class _project_card extends StatelessWidget {
@@ -78,7 +82,8 @@ class _project_card extends StatelessWidget {
     required this.url,
     this.wedsite,
     required this.language,
-    this.visibility, required this.projectimage,
+    this.visibility,
+    required this.projectimage,
   });
 
   @override
@@ -105,22 +110,19 @@ class _project_card extends StatelessWidget {
             height: size.width / 2.5,
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: NetworkImage(
-                        "${projectimage}")),
-              
+                    fit: BoxFit.cover, image: NetworkImage("${projectimage}")),
                 borderRadius: BorderRadius.circular(40)),
           ),
           Padding(
-            padding: const EdgeInsets.all(5.0),
+            padding: const EdgeInsets.all(3.0),
             child: Text(
               name!,
-              style: ktextstyleopenSans(fontsize: size.width / 17 ),
+              style: ktextstyleopenSans(fontsize: size.width / 20),
             ),
           ),
           SizedBox(
             width: size.width - 70,
-            height: size.width / 5.8,
+            height: size.width / 5.3,
             child: SingleChildScrollView(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -131,10 +133,11 @@ class _project_card extends StatelessWidget {
               ),
             ),
           ),
-          Kheight(),
+          // Kheight(),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              kwidht(size.width/20),
               InkWell(
                 onTap: () {
                   launchweb(url: url!);
@@ -160,11 +163,12 @@ class _project_card extends StatelessWidget {
               kwidht(size.width / 30),
               kwidht(size.width / 30),
               Text(
-                "🔴 ${language ?? ""}     ${visibility?.toUpperCase()}",
+                "🔴 ${language ?? ""} , ${visibility?.toUpperCase()}",
                 style: ktextstyleopenSans(fontsize: size.width / 25),
-              )
+              ),
+              kwidht(size.width / 30),
             ],
-          )
+          ),
         ],
       ),
     );

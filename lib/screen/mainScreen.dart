@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:protfolio/Http%20service/Onwer_Api_Call.dart';
 import 'package:protfolio/core/constant.dart';
-import 'package:protfolio/service/apicall.dart';
+import 'package:protfolio/Http%20service/Project_ApiCall.dart';
+import 'package:protfolio/models/user_model/user_model.dart';
 import 'package:protfolio/widget/AboutMe.dart';
 import 'package:protfolio/widget/experiencesectio.dart';
 import 'package:protfolio/widget/projectslidesection.dart';
 import 'package:protfolio/widget/skillsection.dart';
 import 'package:protfolio/widget/topNameSection.dart';
+
+
 
 class Mainscreen extends StatefulWidget {
   Mainscreen({super.key});
@@ -16,24 +20,16 @@ class Mainscreen extends StatefulWidget {
 
 class _MainscreenState extends State<Mainscreen> {
   @override
- void initState() {
-    
-    
-      getproject();
+  void initState() {
+    getproject();
     super.initState();
   }
 
   void getproject() async {
-    bool isready = false;
-   print("object");
-   fetchGitHubProjects();
-    
-    if (isready == true) {
-      setState(() {
-
-      });
-    }
+    fetchGitHubProjects();
+    Userdata = await getOwnerInformation();
   }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -47,12 +43,10 @@ class _MainscreenState extends State<Mainscreen> {
           InkWell(
             onTap: () {
               fetchGitHubProjects();
-            
-           
             },
             child: Center(
                 child: Text(
-              "PORTFOLIA",
+              "PORTFOLIO",
               style: ktextstyleopenSans(fontsize: size.width / 20),
             )),
           ),

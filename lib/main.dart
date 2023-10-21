@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:protfolio/screen/mainScreen.dart';
 import 'package:flutter/services.dart';
-import 'package:protfolio/service/apicall.dart';
+import 'package:protfolio/Http%20service/Project_ApiCall.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  //fetchGitHubProjects();
+
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp, // Allow only portrait orientation
   ]);

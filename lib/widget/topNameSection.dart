@@ -1,8 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:protfolio/core/constant.dart';
+import 'package:protfolio/core/function.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class NameSection extends StatelessWidget {
+class NameSection extends StatefulWidget {
   const NameSection({super.key});
+
+  @override
+  State<NameSection> createState() => _NameSectionState();
+}
+
+class _NameSectionState extends State<NameSection> {
+  @override
+  void initState() {
+    setState(() {});
+    Future.delayed(
+      const Duration(seconds: 2),
+      () async {
+        setState(() {});
+      },
+    );
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,17 +44,31 @@ class NameSection extends StatelessWidget {
       child: Stack(
         children: [
           Positioned(
+            top: 20,
+            right: 20,
+            child: InkWell(
+              onTap: () {
+                launchweb(url: Userdata?.htmlUrl ?? "");
+              },
+              child: CircleAvatar(
+                radius: 23,
+                backgroundColor: Colors.transparent,
+                backgroundImage: NetworkImage("${Userdata?.avatarUrl}"),
+              ),
+            ),
+          ),
+          Positioned(
               top: size.width / 6,
               left: size.width / 15,
               child: Text(
-                "I'am ",
+                Userdata?.name.toString() != null ? "I'am " : "",
                 style: ktextstylelora(fontsize: size.width / 11),
               )),
           Positioned(
               top: size.width / 3.6,
               left: size.width / 10,
               child: Text(
-                "Shan John",
+                Userdata?.name.toString() ?? "",
                 style: ktextstylelora(fontsize: size.width / 11),
               ))
         ],

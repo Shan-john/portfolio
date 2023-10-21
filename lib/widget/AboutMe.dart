@@ -1,8 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:protfolio/core/constant.dart';
+import 'package:protfolio/screen/mainScreen.dart';
 
-class AboutMeSection extends StatelessWidget {
+class AboutMeSection extends StatefulWidget {
   const AboutMeSection({super.key});
+
+  @override
+  State<AboutMeSection> createState() => _AboutMeSectionState();
+}
+
+class _AboutMeSectionState extends State<AboutMeSection> {
+  @override
+  void initState() {
+    setState(() {});
+    Future.delayed(
+      const Duration(seconds: 2),
+      () async {
+       
+        setState(() {});
+      },
+    );
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +38,7 @@ class AboutMeSection extends StatelessWidget {
           ),
           Kheight(),
           Text(
-            ktext,
+            Userdata?.bio.toString() ?? "",
             style: ktextstyleopenSans(fontsize: size.width / 27),
           )
         ]),
