@@ -8,29 +8,33 @@ class MYskill extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(30),
-      height: 500,
+      height: 570,
       child: GridView.builder(
         itemCount: listofSkill.length,
         physics: NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4,
          
-             crossAxisCount: 4,
-      
-            ),
+          
+        ),
         itemBuilder: (context, index) {
           final skill = listofSkill[index];
-       
-          return Column(
-            children: [
-              SizedBox(
+
+          return Container(
+            height: 70,
+            child: Column(
+              children: [
+                Container(
              
                 height: 50,
                 width: 50,
                 child: Image.network(skill.image??"")),
                 Kheight(),
               Text(skill.name ?? "",style: ktextstyleopenSans(fontsize: 18),),
-              Kheight50(),
-            ],
+            
+          
+              ],
+            ),
           );
         },
       ),

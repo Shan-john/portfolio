@@ -17,7 +17,8 @@ ktextstyleopenSans({required double fontsize}) =>
 Kheight() => SizedBox(
       height: 15,
     );
-    Kheight50() => SizedBox(
+   
+    Kheight50() => const SizedBox(
       height: 50,
     );
 String ktext =
