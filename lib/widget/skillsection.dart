@@ -13,7 +13,8 @@ class MYskill extends StatelessWidget {
         itemCount: listofSkill.length,
         physics: NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          
+          crossAxisSpacing: 10,
+          mainAxisExtent: 10,
              crossAxisCount: 4,
       
             ),
