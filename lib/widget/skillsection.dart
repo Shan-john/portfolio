@@ -4,8 +4,10 @@ import 'package:protfolio/models/skill_model/skill_model.dart';
 
 class MYskill extends StatelessWidget {
   const MYskill();
+
   @override
   Widget build(BuildContext context) {
+    listofSkill.shuffle();
     return Container(
       margin: EdgeInsets.all(30),
       height: 220,
@@ -14,8 +16,6 @@ class MYskill extends StatelessWidget {
         physics: NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 4,
-         
-          
         ),
         itemBuilder: (context, index) {
           final skill = listofSkill[index];
@@ -24,17 +24,16 @@ class MYskill extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical: 0),
             height: 70,
             child: Column(
-             
               children: [
-                Container(
-             
-                height: 50,
-                width: 50,
-                child: Image.network(skill.image??"")),
+                SizedBox(
+                    height: 50,
+                    width: 50,
+                    child: Image.network(skill.image ?? "")),
                 Kheight(),
-              Text(skill.name ?? "",style: ktextstyleopenSans(fontsize: 18),),
-            
-          
+                Text(
+                  skill.name ?? "",
+                  style: ktextstyleopenSans(fontsize: 18),
+                ),
               ],
             ),
           );

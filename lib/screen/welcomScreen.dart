@@ -18,7 +18,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   void initState() {
     getinformation();
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => Mainscreen(),
       ));
@@ -30,7 +30,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     Userdata = await getOwnerInformation();
     listofExperience = await FirebasefirestoreHelper.instance.getExperience();
     listofSkill = await FirebasefirestoreHelper.instance.getSkills();
+     
+   
     await fetchGitHubProjects();
+    listOfProjects.shuffle();
+    setState(() {
+      
+    });
   }
 
   @override

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-
 import 'package:protfolio/core/constant.dart';
 
 import 'package:protfolio/core/function.dart';
-import 'package:protfolio/screen/mainScreen.dart';
 
 class ProjectScetion extends StatefulWidget {
   ProjectScetion({super.key});
@@ -15,23 +13,24 @@ class ProjectScetion extends StatefulWidget {
 }
 
 class _ProjectScetionState extends State<ProjectScetion> {
-  @override
-  void initState() {
-    getinformation();
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   getinformation();
+  //   super.initState();
+  // }
 
-  getinformation() async {
-    Future.delayed(
-      const Duration(seconds: 2),
-      () async {
-        setState(() {});
-      },
-    );
-  }
+  // getinformation() async {
+  //   Future.delayed(
+  //     const Duration(seconds: 2),
+  //     () async {
+  //       setState(() {});
+  //     },
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
+   
     final size = MediaQuery.of(context).size;
     return SizedBox(
       height: size.width / 1.1,
