@@ -5,6 +5,7 @@ import 'package:protfolio/screen/mainScreen.dart';
 import 'package:flutter/services.dart';
 import 'package:protfolio/screen/welcomScreen.dart';
 import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

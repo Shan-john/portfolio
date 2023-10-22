@@ -23,6 +23,7 @@ class ExperienceSection extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
+              padding: EdgeInsets.symmetric(horizontal: 10),
               scrollDirection: Axis.horizontal,
               itemCount: listofExperience.length,
               itemBuilder: (context, index) {

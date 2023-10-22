@@ -107,13 +107,18 @@ class _project_card extends StatelessWidget {
           ]),
       child: Column(
         children: [
-          Container(
-            width: size.width - 60,
-            height: size.width / 2.5,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.cover, image: NetworkImage("${projectimage}")),
-                borderRadius: BorderRadius.circular(40)),
+          InkWell(
+            onTap: (){
+            launchweb(url: url!);
+            },
+            child: Container(
+              width: size.width - 60,
+              height: size.width / 2.5,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.cover, image: NetworkImage("${projectimage}")),
+                  borderRadius: BorderRadius.circular(40)),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(3.0),
@@ -135,21 +140,11 @@ class _project_card extends StatelessWidget {
               ),
             ),
           ),
-          // Kheight(),
+         
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              kwidht(size.width / 20),
-              InkWell(
-                onTap: () {
-                  launchweb(url: url!);
-                },
-                child: Icon(
-                  Icons.drive_file_move_outlined,
-                  color: Colors.white,
-                  size: 30,
-                ),
-              ),
+              
               wedsite != null
                   ? InkWell(
                       onTap: () {
@@ -163,13 +158,12 @@ class _project_card extends StatelessWidget {
                     )
                   : SizedBox(),
               kwidht(size.width / 30),
-              kwidht(size.width / 30),
+            
               Text(
                 "🔴 ${language ?? ""} , ${visibility?.toUpperCase()}",
                 style: ktextstyleopenSans(fontsize: size.width / 25),
               ),
-              kwidht(size.width / 30),
-            ],
+            ]
           ),
         ],
       ),
