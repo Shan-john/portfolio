@@ -13,8 +13,7 @@ class MYskill extends StatelessWidget {
         itemCount: listofSkill.length,
         physics: NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisSpacing: 10,
-          mainAxisExtent: 10,
+         
              crossAxisCount: 4,
       
             ),
@@ -24,13 +23,12 @@ class MYskill extends StatelessWidget {
           return Column(
             children: [
               Container(
+                margin: EdgeInsets.all(10),
                 height: 50,
                 width: 50,
                 child: Image.network(skill.image??"")),
                 Kheight(),
-              Container(
-                child: Text(skill.name ?? "",style: ktextstyleopenSans(fontsize: 18),),
-              ),
+              Text(skill.name ?? "",style: ktextstyleopenSans(fontsize: 18),),
             ],
           );
         },

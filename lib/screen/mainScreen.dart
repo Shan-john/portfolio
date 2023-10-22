@@ -44,24 +44,26 @@ class _MainscreenState extends State<Mainscreen> {
           Kheight(),
           AboutMeSection(),
           Kheight(),
-          InkWell(
-            onTap: () {
-              fetchGitHubProjects();
-              setState(() {});
-              listOfProjects.map((e) => print(e));
-            },
-            child: Center(
+         
+          Center(
                 child: Text(
               "PORTFOLIO",
               style: ktextstyleopenSans(fontsize: size.width / 20),
-            )),
-          ),
+                ),
+                ),
+      
           Kheight(),
           ProjectScetion(),
           Kheight(),
           ExperienceSection(),
           Kheight(),
-          MYskill()
+           Center(
+                child: Text(
+              "Skills",
+              style: ktextstyleopenSans(fontsize: size.width / 20),
+            ),
+          ),
+          MYskill(),
         ],
       ),
     );
