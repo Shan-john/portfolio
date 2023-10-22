@@ -7,7 +7,9 @@ import 'package:protfolio/models/user_model/user_model.dart';
 Future<UserModel> getOwnerInformation() async {
   final responce = await http.get(Uri.parse(onwerApiUrl));
   final jsonbody = jsonDecode(responce.body) as Map<String, dynamic>;
-  final data = UserModel.fromJson(jsonbody);
+  final data = UserModel.fromJson(jsonbody); 
+
+
 
   return data;
 }

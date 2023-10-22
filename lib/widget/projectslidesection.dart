@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
+
 
 import 'package:protfolio/core/constant.dart';
-import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
+
 import 'package:protfolio/core/function.dart';
 import 'package:protfolio/screen/mainScreen.dart';
 
