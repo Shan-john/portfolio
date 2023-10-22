@@ -5,9 +5,29 @@ import 'package:protfolio/models/user_model/user_model.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
-class NameSection extends StatelessWidget {
+class NameSection extends StatefulWidget {
   const NameSection({super.key});
 
+  @override
+  State<NameSection> createState() => _NameSectionState();
+}
+
+class _NameSectionState extends State<NameSection> {
+  @override
+  void initState() {
+    getinformation();
+    super.initState();
+  }
+
+  getinformation() async {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () async {
+        // Userdata = await getOwnerInformation();
+        setState(() {});
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {

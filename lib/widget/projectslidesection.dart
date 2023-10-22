@@ -13,20 +13,20 @@ class ProjectScetion extends StatefulWidget {
 }
 
 class _ProjectScetionState extends State<ProjectScetion> {
-  // @override
-  // void initState() {
-  //   getinformation();
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    getinformation();
+    super.initState();
+  }
 
-  // getinformation() async {
-  //   Future.delayed(
-  //     const Duration(seconds: 2),
-  //     () async {
-  //       setState(() {});
-  //     },
-  //   );
-  // }
+  getinformation() async {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () async {
+        setState(() {});
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
