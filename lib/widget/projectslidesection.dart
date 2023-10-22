@@ -25,7 +25,7 @@ class _ProjectScetionState extends State<ProjectScetion> {
     Future.delayed(
       const Duration(seconds: 2),
       () async {
-      // Userdata = await getOwnerInformation();
+    
         setState(() {});
       },
     );
@@ -34,8 +34,8 @@ class _ProjectScetionState extends State<ProjectScetion> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return SizedBox(
-      height: size.width / 1.1,
-      // color: Colors.red,
+      height: size.width /1.1  ,
+      
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -47,7 +47,10 @@ class _ProjectScetionState extends State<ProjectScetion> {
             ),
           ),
           Expanded(
-            child: ListView.builder(
+           child: 
+            ListView.builder(
+       //    primary: false ,
+             // physics: NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 itemCount: listOfProjects.length,
                 itemBuilder: (context, index) {

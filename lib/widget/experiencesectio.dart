@@ -21,6 +21,7 @@ class ExperienceSection extends StatelessWidget {
               style: ktextstyleopenSans(fontsize: size.width / 21),
             ),
           ),
+          Kheight(),
           Expanded(
             child: ListView.builder(
               padding: EdgeInsets.symmetric(horizontal: 10),
@@ -29,8 +30,8 @@ class ExperienceSection extends StatelessWidget {
               itemBuilder: (context, index) {
                 final experience = listofExperience[index];
                 return ExperienceCard(
-                  title: experience.name!,
-                  Discription: experience.technologyUsed??"",
+                  title: experience.name??"",
+                  Discription: experience.description??"",
                 );
               },
             ),
@@ -85,21 +86,22 @@ class ExperienceCard extends StatelessWidget {
                     color: Colors.white,
                     fontSize: size.width / 20 ,
                     fontFamily: 'Inder',
-                    fontWeight: FontWeight.w400,
-                    height: 0,
+                    fontWeight: FontWeight.w400, 
+                
                     letterSpacing: 1.20,
                   ),
                 ),
                 Spacer(),
-                
+               // Kheight(),
                   Text(
                   Discription,
-                  style: TextStyle(
+                  style: TextStyle (
+              
                     color: Colors.white,
                     fontSize: size.width / 30,
                     fontFamily: 'Inder',
                     fontWeight: FontWeight.w400,
-                    height: 0,
+                   // height: 0,
                     letterSpacing: 1.20,
                   ),
                 ),
