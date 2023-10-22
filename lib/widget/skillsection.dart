@@ -22,13 +22,14 @@ class MYskill extends StatelessWidget {
        
           return Column(
             children: [
-              Container(
-                margin: EdgeInsets.all(10),
+              SizedBox(
+             
                 height: 50,
                 width: 50,
                 child: Image.network(skill.image??"")),
                 Kheight(),
               Text(skill.name ?? "",style: ktextstyleopenSans(fontsize: 18),),
+              Kheight(),
             ],
           );
         },
