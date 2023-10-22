@@ -8,7 +8,7 @@ class MYskill extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(30),
-      height: 570,
+      height: 220,
       child: GridView.builder(
         itemCount: listofSkill.length,
         physics: NeverScrollableScrollPhysics(),
@@ -21,8 +21,10 @@ class MYskill extends StatelessWidget {
           final skill = listofSkill[index];
 
           return Container(
+            margin: EdgeInsets.symmetric(vertical: 0),
             height: 70,
             child: Column(
+             
               children: [
                 Container(
              
