@@ -21,7 +21,7 @@ class _AboutMeSectionState extends State<AboutMeSection> {
     Future.delayed(
       const Duration(seconds: 2),
       () async {
-      //  Userdata = await getOwnerInformation();
+        //  Userdata = await getOwnerInformation();
         setState(() {});
       },
     );

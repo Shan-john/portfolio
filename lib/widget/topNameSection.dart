@@ -13,7 +13,7 @@ class NameSection extends StatefulWidget {
 }
 
 class _NameSectionState extends State<NameSection> {
-    @override
+  @override
   void initState() {
     getinformation();
     super.initState();
@@ -23,7 +23,7 @@ class _NameSectionState extends State<NameSection> {
     Future.delayed(
       const Duration(seconds: 2),
       () async {
-      // Userdata = await getOwnerInformation();
+        // Userdata = await getOwnerInformation();
         setState(() {});
       },
     );

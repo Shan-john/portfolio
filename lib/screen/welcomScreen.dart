@@ -1,4 +1,3 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:protfolio/core/constant.dart';
@@ -26,13 +25,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     super.initState();
   }
 
-void  getinformation() async {
-  
-        Userdata = await getOwnerInformation();
-        await  FirebasefirestoreHelper.instance.getExperience();
-        await fetchGitHubProjects();
-       
-      
+  void getinformation() async {
+    Userdata = await getOwnerInformation();
+    listofExperience = await FirebasefirestoreHelper.instance.getExperience();
+    listofSkill = await FirebasefirestoreHelper.instance.getSkills();
+    await fetchGitHubProjects();
   }
 
   @override
@@ -44,16 +41,14 @@ void  getinformation() async {
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: Image(
-              fit: BoxFit.fitHeight,
+                fit: BoxFit.fitHeight,
                 image: NetworkImage(
-                
                     "https://i.pinimg.com/564x/33/46/74/33467414e8e293b6aae73dc98f2da65c.jpg")),
           ),
           Align(
             alignment: Alignment.center,
             child: CircularProgressIndicator(
               color: Colors.blue.withOpacity(0.5),
-
             ),
           )
         ],

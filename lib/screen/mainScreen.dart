@@ -25,15 +25,13 @@ class _MainscreenState extends State<Mainscreen> {
   }
 
   void getinforamtion() async {
-   
-    listofExperience = await  FirebasefirestoreHelper.instance.getExperience();
-     await  fetchGitHubProjects();
-     
-   Userdata = await getOwnerInformation();
+    listofExperience = await FirebasefirestoreHelper.instance.getExperience();
+    listofSkill = await FirebasefirestoreHelper.instance.getSkills();
+    await fetchGitHubProjects();
 
-    setState(() {
-    });
-   
+    Userdata = await getOwnerInformation();
+
+    setState(() {});
   }
 
   @override
@@ -48,12 +46,9 @@ class _MainscreenState extends State<Mainscreen> {
           Kheight(),
           InkWell(
             onTap: () {
-              
-               fetchGitHubProjects();
-              setState(() {
-                
-              });
-               listOfProjects.map((e) => print(e));
+              fetchGitHubProjects();
+              setState(() {});
+              listOfProjects.map((e) => print(e));
             },
             child: Center(
                 child: Text(

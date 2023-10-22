@@ -8,14 +8,14 @@ class Responsive_Layout_Error_Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-       
         height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width
-        ,
-        child: Center(child: Text(
-              "Turn off \"Desktop veiw\"and switch to \"normal view\"",
-              style: ktextstyleopenSans(fontsize: 30),
-            ),),
+        width: MediaQuery.of(context).size.width,
+        child: Center(
+          child: Text(
+            "Turn off \"Desktop veiw\"and switch to \"normal view\"",
+            style: ktextstyleopenSans(fontsize: 30),
+          ),
+        ),
       ),
     );
   }

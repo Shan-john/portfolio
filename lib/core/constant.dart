@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:protfolio/models/experience_model/experience_model.dart';
 import 'package:protfolio/models/project_model/owner.dart';
 import 'package:protfolio/models/project_model/project_model.dart';
+import 'package:protfolio/models/skill_model/skill_model.dart';
 import 'package:protfolio/models/user_model/user_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,6 +26,7 @@ kwidht(size) => SizedBox(
 
 List<ProjectModel> listOfProjects = [];
 List<ExperienceModel> listofExperience = [];
+List<SkillModel> listofSkill = [];
 
 UserModel? Userdata = UserModel();
 List<String> projectimage = [
@@ -33,4 +35,5 @@ List<String> projectimage = [
   "https://i.pinimg.com/564x/f7/26/62/f72662c9ccf1c7d437827a374cb8d38e.jpg",
   "https://i.pinimg.com/564x/4b/10/b7/4b10b73b24c14c78f9c30f37bedfd742.jpg",
   "https://i.pinimg.com/736x/40/bf/50/40bf5022f099e7030c11e17e50f4b3da.jpg",
+  "https://i.pinimg.com/564x/90/44/a6/9044a634e09b2a633ff73efad0fdf470.jpg"
 ];

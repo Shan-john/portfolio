@@ -30,8 +30,8 @@ class ExperienceSection extends StatelessWidget {
               itemBuilder: (context, index) {
                 final experience = listofExperience[index];
                 return ExperienceCard(
-                  title: experience.name??"",
-                  Discription: experience.description??"",
+                  title: experience.name ?? "",
+                  Discription: experience.description ?? "",
                 );
               },
             ),
@@ -50,58 +50,55 @@ class ExperienceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      width: size.width-80,
+      width: size.width - 80,
       padding: EdgeInsets.all(20),
-        decoration: ShapeDecoration(
-          color:  HexColor("101630"),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(38),
-            ),
-            shadows: [
-              BoxShadow(
-                color: Color(0x3F3E355A),
-                blurRadius: 5,
-                offset: Offset(2, 2),
-                spreadRadius: 0,
-              ),
-              BoxShadow(
-                color: Color(0xFF4F349B),
-                blurRadius: 5,
-                offset: Offset(-2, -2),
-                spreadRadius: 0,
-              )
-            ],
+      decoration: ShapeDecoration(
+        color: HexColor("101630"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(38),
+        ),
+        shadows: [
+          BoxShadow(
+            color: Color(0x3F3E355A),
+            blurRadius: 5,
+            offset: Offset(2, 2),
+            spreadRadius: 0,
           ),
+          BoxShadow(
+            color: Color(0xFF4F349B),
+            blurRadius: 5,
+            offset: Offset(-2, -2),
+            spreadRadius: 0,
+          )
+        ],
+      ),
       child: Row(
         children: [
-        
           SizedBox(
             height: size.width / 2.4,
-             width: size.width -130 ,
+            width: size.width - 130,
             child: Column(
               children: [
                 Text(
                   title,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: size.width / 20 ,
+                    fontSize: size.width / 20,
                     fontFamily: 'Inder',
-                    fontWeight: FontWeight.w400, 
-                
+                    fontWeight: FontWeight.w400,
                     letterSpacing: 1.20,
                   ),
                 ),
                 Spacer(),
-               // Kheight(),
-                  Text(
+                // Kheight(),
+                Text(
                   Discription,
-                  style: TextStyle (
-              
+                  style: TextStyle(
                     color: Colors.white,
                     fontSize: size.width / 30,
                     fontFamily: 'Inder',
                     fontWeight: FontWeight.w400,
-                   // height: 0,
+                    // height: 0,
                     letterSpacing: 1.20,
                   ),
                 ),

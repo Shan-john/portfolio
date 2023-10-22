@@ -15,7 +15,7 @@ class ProjectScetion extends StatefulWidget {
 }
 
 class _ProjectScetionState extends State<ProjectScetion> {
-      @override
+  @override
   void initState() {
     getinformation();
     super.initState();
@@ -25,17 +25,16 @@ class _ProjectScetionState extends State<ProjectScetion> {
     Future.delayed(
       const Duration(seconds: 2),
       () async {
-    
         setState(() {});
       },
     );
   }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return SizedBox(
-      height: size.width /1.1  ,
-      
+      height: size.width / 1.1,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -47,10 +46,9 @@ class _ProjectScetionState extends State<ProjectScetion> {
             ),
           ),
           Expanded(
-           child: 
-            ListView.builder(
-       //    primary: false ,
-             // physics: NeverScrollableScrollPhysics(),
+            child: ListView.builder(
+                //    primary: false ,
+                // physics: NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 itemCount: listOfProjects.length,
                 itemBuilder: (context, index) {
@@ -111,15 +109,16 @@ class _project_card extends StatelessWidget {
       child: Column(
         children: [
           InkWell(
-            onTap: (){
-            launchweb(url: url!);
+            onTap: () {
+              launchweb(url: url!);
             },
             child: Container(
               width: size.width - 60,
               height: size.width / 2.5,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      fit: BoxFit.cover, image: NetworkImage("${projectimage}")),
+                      fit: BoxFit.cover,
+                      image: NetworkImage("${projectimage}")),
                   borderRadius: BorderRadius.circular(40)),
             ),
           ),
@@ -143,31 +142,25 @@ class _project_card extends StatelessWidget {
               ),
             ),
           ),
-         
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              
-              wedsite != null
-                  ? InkWell(
-                      onTap: () {
-                        launchweb(url: wedsite!);
-                      },
-                      child: Icon(
-                        Icons.link,
-                        color: Colors.white,
-                        size: 30,
-                      ),
-                    )
-                  : SizedBox(),
-              kwidht(size.width / 30),
-            
-              Text(
-                "🔴 ${language ?? ""} , ${visibility?.toUpperCase()}",
-                style: ktextstyleopenSans(fontsize: size.width / 25),
-              ),
-            ]
-          ),
+          Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+            wedsite != null
+                ? InkWell(
+                    onTap: () {
+                      launchweb(url: wedsite!);
+                    },
+                    child: Icon(
+                      Icons.link,
+                      color: Colors.white,
+                      size: 30,
+                    ),
+                  )
+                : SizedBox(),
+            kwidht(size.width / 30),
+            Text(
+              "🔴 ${language ?? ""} , ${visibility?.toUpperCase()}",
+              style: ktextstyleopenSans(fontsize: size.width / 25),
+            ),
+          ]),
         ],
       ),
     );

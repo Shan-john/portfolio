@@ -5,7 +5,7 @@ part 'experience_model.g.dart';
 @JsonSerializable()
 class ExperienceModel {
   String? name;
-  String? description; 
+  String? description;
   String? date;
   String? technologyUsed;
 
