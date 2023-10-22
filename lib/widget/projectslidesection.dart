@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:protfolio/Http%20service/Onwer_Api_Call.dart';
+import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
 
 import 'package:protfolio/core/constant.dart';
-import 'package:protfolio/Http%20service/Project_ApiCall.dart';
+import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
 import 'package:protfolio/core/function.dart';
 import 'package:protfolio/screen/mainScreen.dart';
 
@@ -15,19 +15,21 @@ class ProjectScetion extends StatefulWidget {
 }
 
 class _ProjectScetionState extends State<ProjectScetion> {
-  @override
+      @override
   void initState() {
-    setState(() {});
-    Future.delayed(
-      const Duration(seconds: 2),
-      () async {
-       
-        setState(() {});
-      },
-    );
+    getinformation();
     super.initState();
   }
 
+  getinformation() async {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () async {
+      // Userdata = await getOwnerInformation();
+        setState(() {});
+      },
+    );
+  }
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -137,7 +139,7 @@ class _project_card extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              kwidht(size.width/20),
+              kwidht(size.width / 20),
               InkWell(
                 onTap: () {
                   launchweb(url: url!);

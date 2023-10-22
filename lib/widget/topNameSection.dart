@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/core/function.dart';
+import 'package:protfolio/models/user_model/user_model.dart';
+import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NameSection extends StatefulWidget {
@@ -11,16 +13,20 @@ class NameSection extends StatefulWidget {
 }
 
 class _NameSectionState extends State<NameSection> {
-  @override
+    @override
   void initState() {
-    setState(() {});
+    getinformation();
+    super.initState();
+  }
+
+  getinformation() async {
     Future.delayed(
       const Duration(seconds: 2),
       () async {
+      // Userdata = await getOwnerInformation();
         setState(() {});
       },
     );
-    super.initState();
   }
 
   @override
@@ -61,7 +67,7 @@ class _NameSectionState extends State<NameSection> {
               top: size.width / 6,
               left: size.width / 15,
               child: Text(
-                Userdata?.name.toString() != null ? "I'am " : "",
+                Userdata?.name.toString() != null ? "I'am " : " ",
                 style: ktextstylelora(fontsize: size.width / 11),
               )),
           Positioned(

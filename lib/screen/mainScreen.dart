@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:protfolio/Http%20service/Onwer_Api_Call.dart';
+import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
 import 'package:protfolio/core/constant.dart';
-import 'package:protfolio/Http%20service/Project_ApiCall.dart';
+import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
 import 'package:protfolio/models/user_model/user_model.dart';
+import 'package:protfolio/service/firebase/fireBaseFirestoreHelper.dart';
 import 'package:protfolio/widget/AboutMe.dart';
 import 'package:protfolio/widget/experiencesectio.dart';
 import 'package:protfolio/widget/projectslidesection.dart';
 import 'package:protfolio/widget/skillsection.dart';
 import 'package:protfolio/widget/topNameSection.dart';
-
-
 
 class Mainscreen extends StatefulWidget {
   Mainscreen({super.key});
@@ -21,13 +20,20 @@ class Mainscreen extends StatefulWidget {
 class _MainscreenState extends State<Mainscreen> {
   @override
   void initState() {
-    getproject();
+    getinforamtion();
     super.initState();
   }
 
-  void getproject() async {
-    fetchGitHubProjects();
-    Userdata = await getOwnerInformation();
+  void getinforamtion() async {
+   
+    listofExperience = await  FirebasefirestoreHelper.instance.getExperience();
+     await  fetchGitHubProjects();
+     
+   Userdata = await getOwnerInformation();
+
+    setState(() {
+    });
+   
   }
 
   @override
@@ -42,7 +48,12 @@ class _MainscreenState extends State<Mainscreen> {
           Kheight(),
           InkWell(
             onTap: () {
-              fetchGitHubProjects();
+              
+               fetchGitHubProjects();
+              setState(() {
+                
+              });
+               listOfProjects.map((e) => print(e));
             },
             child: Center(
                 child: Text(

@@ -2,6 +2,7 @@ import 'dart:core';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:protfolio/models/experience_model/experience_model.dart';
 import 'package:protfolio/models/project_model/owner.dart';
 import 'package:protfolio/models/project_model/project_model.dart';
 import 'package:protfolio/models/user_model/user_model.dart';
@@ -23,8 +24,9 @@ kwidht(size) => SizedBox(
     );
 
 List<ProjectModel> listOfProjects = [];
+List<ExperienceModel> listofExperience = [];
 
- UserModel? Userdata = null;
+UserModel? Userdata = UserModel();
 List<String> projectimage = [
   "https://i.pinimg.com/564x/d6/19/a6/d619a64645bf2cbf8f32f9063cf29ac5.jpg",
   "https://i.pinimg.com/564x/47/66/39/476639214be4ad45e983109cdfa2c6ab.jpg",

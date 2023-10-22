@@ -1,14 +1,16 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:protfolio/screen/mainScreen.dart';
 import 'package:flutter/services.dart';
-import 'package:protfolio/Http%20service/Project_ApiCall.dart';
+import 'package:protfolio/screen/welcomScreen.dart';
+import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+ await Firebase.initializeApp();
   SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp, // Allow only portrait orientation
+   DeviceOrientation.portraitUp, // Allow only portrait orientation
   ]);
 
   runApp(const MyApp());
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'PROTFOLIO',
       theme: ThemeData(scaffoldBackgroundColor: HexColor("101630")),
-      home: Mainscreen(),
+      home: const WelcomeScreen(),
     );
   }
 }

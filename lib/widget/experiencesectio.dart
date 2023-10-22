@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:protfolio/core/constant.dart';
+import 'package:protfolio/service/firebase/fireBaseFirestoreHelper.dart';
 
 class ExperienceSection extends StatelessWidget {
   const ExperienceSection({super.key});
@@ -16,16 +18,20 @@ class ExperienceSection extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               "Experience",
-              style: ktextstyleopenSans(fontsize: size.width / 30),
+              style: ktextstyleopenSans(fontsize: size.width / 21),
             ),
           ),
           Expanded(
-            child: ListView(
+            child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              children: [
-                ExperienceCart(),
-                ExperienceCart(),
-              ],
+              itemCount: listofExperience.length,
+              itemBuilder: (context, index) {
+                final experience = listofExperience[index];
+                return ExperienceCard(
+                  title: experience.name!,
+                  Discription: experience.technologyUsed??"",
+                );
+              },
             ),
           ),
         ],
@@ -34,21 +40,18 @@ class ExperienceSection extends StatelessWidget {
   }
 }
 
-class ExperienceCart extends StatelessWidget {
+class ExperienceCard extends StatelessWidget {
+  final String title;
+  final String Discription;
+  ExperienceCard({required this.title, required this.Discription});
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return Row(
-      children: [
-        Container(
-          margin: EdgeInsets.all(10),
-          width: size.width / 2.2,
-          height: size.width / 2.2,
-          decoration: ShapeDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/337x337"),
-              fit: BoxFit.fill,
-            ),
+    return Container(
+      width: size.width-80,
+      padding: EdgeInsets.all(20),
+        decoration: ShapeDecoration(
+          color:  HexColor("101630"),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(38),
             ),
@@ -67,25 +70,43 @@ class ExperienceCart extends StatelessWidget {
               )
             ],
           ),
-        ),
-        Center(
-          child: SizedBox(
+      child: Row(
+        children: [
+        
+          SizedBox(
             height: size.width / 2.4,
-            width: size.width / 2.2,
-            child: Text(
-              ktext,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: size.width / 30,
-                fontFamily: 'Inder',
-                fontWeight: FontWeight.w400,
-                height: 0,
-                letterSpacing: 1.20,
-              ),
+             width: size.width -130 ,
+            child: Column(
+              children: [
+                Text(
+                  title,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: size.width / 20 ,
+                    fontFamily: 'Inder',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                    letterSpacing: 1.20,
+                  ),
+                ),
+                Spacer(),
+                
+                  Text(
+                  Discription,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: size.width / 30,
+                    fontFamily: 'Inder',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                    letterSpacing: 1.20,
+                  ),
+                ),
+              ],
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

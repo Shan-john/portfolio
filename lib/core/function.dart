@@ -7,7 +7,7 @@ void launchweb({required String url}) async {
   try {
     // ignore: deprecated_member_use
     await launch(_url.toString());
-  } on PlatformException catch (e) {
+  } catch (e) {
     print(e);
   }
 }

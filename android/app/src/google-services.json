@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "383938854377",
+    "project_id": "personalprotfolio-419e4",
+    "storage_bucket": "personalprotfolio-419e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383938854377:android:101cefc1dfcde305101f78",
+        "android_client_info": {
+          "package_name": "com.example.protfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxICtK6YEgICH3oxQg5uIlxHoUkftkfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
