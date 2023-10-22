@@ -9,9 +9,14 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
- await Firebase.initializeApp();
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyDnZZN4ia94hgY3O6GJvUrd8Rer5YySNvE",
+          appId: "1:383938854377:web:37d2aea58c492cf3101f78",
+          messagingSenderId: "",
+          projectId: "personalprotfolio-419e4"));
   SystemChrome.setPreferredOrientations([
-   DeviceOrientation.portraitUp, // Allow only portrait orientation
+    DeviceOrientation.portraitUp, // Allow only portrait orientation
   ]);
 
   runApp(const MyApp());
