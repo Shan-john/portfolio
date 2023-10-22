@@ -29,7 +29,7 @@ class MYskill extends StatelessWidget {
                 child: Image.network(skill.image??"")),
                 Kheight(),
               Text(skill.name ?? "",style: ktextstyleopenSans(fontsize: 18),),
-              Kheight40(),
+              Kheight50(),
             ],
           );
         },

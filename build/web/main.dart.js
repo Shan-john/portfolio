@@ -66184,7 +66184,7 @@ o=A.d4(new A.oz(A.av2(q,q,new A.i3(o==null?"":o,1,q)),q,q),50,50)
 s=A.d4(q,15,q)
 r=p.a
 if(r==null)r=""
-return A.t7(A.a([o,s,A.eu(r,A.iH().$2$color$fontSize(B.h,18)),A.d4(q,40,q)],t.F),B.d9)},
+return A.t7(A.a([o,s,A.eu(r,A.iH().$2$color$fontSize(B.h,18)),A.d4(q,50,q)],t.F),B.d9)},
 $S:411}
 A.v7.prototype={
 an(){return new A.LR(B.j)}}

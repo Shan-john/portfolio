@@ -17,8 +17,8 @@ ktextstyleopenSans({required double fontsize}) =>
 Kheight() => SizedBox(
       height: 15,
     );
-    Kheight40() => SizedBox(
-      height: 40,
+    Kheight50() => SizedBox(
+      height: 50,
     );
 String ktext =
     """Lorem ipsum dolor sit amet. Et nihil ipsum in possimus cupiditate et repudiandae blanditiis ad sint consectetur ab architecto internos ea rerum nihil sed laboriosam possimus. Et culpa autem ut inventore doloremque qui facilis consequatur ut sunt autem ex placeat nostrum. Aut rerum dolorem sed quae eaque non galisum velit.
