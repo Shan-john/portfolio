@@ -8,7 +8,7 @@ import 'package:protfolio/service/firebase/fireBaseFirestoreHelper.dart';
 
 import '../service/Http service/Onwer_Api_Call.dart';
 
-
+String backgroundiamge =   "https://i.pinimg.com/564x/33/46/74/33467414e8e293b6aae73dc98f2da65c.jpg";
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -21,7 +21,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   void initState() {
     getinformation();
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => Mainscreen(),
       ));
@@ -36,15 +36,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
      
    
     await fetchGitHubProjects();
-   
-    // setState(() {
-      
-    // });
+
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    
       body: Stack(
         children: [
           SizedBox(
@@ -52,8 +50,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             width: MediaQuery.of(context).size.width,
             child: Image(
                 fit: BoxFit.fitHeight,
-                image: NetworkImage(
-                    "https://i.pinimg.com/564x/33/46/74/33467414e8e293b6aae73dc98f2da65c.jpg")),
+                image: NetworkImage(backgroundiamge
+                  )),
           ),
           Align(
             alignment: Alignment.center,

@@ -36,7 +36,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'PROTFOLIO',
-      theme: ThemeData(scaffoldBackgroundColor: HexColor("101630")),
+      theme: ThemeData(
+       
+    
+        ),
       home: Responsive_Layout(
         DesktopBody: Responsive_Layout_Error_Screen(),
         MobielBody: WelcomeScreen(),

@@ -95,16 +95,11 @@ class _project_card extends StatelessWidget {
       width: size.width - 60,
       margin: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-          color: HexColor("101630"),
+         
           borderRadius: BorderRadius.circular(40),
-          boxShadow: [
-            BoxShadow(
-                offset: Offset(1, 1), blurRadius: 5, color: HexColor("3F355A")),
-            BoxShadow(
-                offset: const Offset(-1, -1),
-                blurRadius: 5,
-                color: HexColor("4F349B"))
-          ]),
+         
+          )
+          ,
       child: Column(
         children: [
           InkWell(

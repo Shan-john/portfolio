@@ -31,7 +31,7 @@ class _AboutMeSectionState extends State<AboutMeSection> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      // height: size.width / 2,
+     
       width: size.width / 2,
       child: Padding(
         padding: const EdgeInsets.all(8.0),

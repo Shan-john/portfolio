@@ -53,24 +53,24 @@ class ExperienceCard extends StatelessWidget {
       width: size.width - 80,
       padding: EdgeInsets.all(20),
       decoration: ShapeDecoration(
-        color: HexColor("101630"),
+        //color: HexColor("101630"),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(38),
         ),
-        shadows: [
-          BoxShadow(
-            color: Color(0x3F3E355A),
-            blurRadius: 5,
-            offset: Offset(2, 2),
-            spreadRadius: 0,
-          ),
-          BoxShadow(
-            color: Color(0xFF4F349B),
-            blurRadius: 5,
-            offset: Offset(-2, -2),
-            spreadRadius: 0,
-          )
-        ],
+        // shadows: [
+        //   BoxShadow(
+        //     color: Color(0x3F3E355A),
+        //     blurRadius: 5,
+        //     offset: Offset(2, 2),
+        //     spreadRadius: 0,
+        //   ),
+        //   BoxShadow(
+        //     color: Color(0xFF4F349B),
+        //     blurRadius: 5,
+        //     offset: Offset(-2, -2),
+        //     spreadRadius: 0,
+        //   )
+        // ],
       ),
       child: Row(
         children: [
