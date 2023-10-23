@@ -66201,12 +66201,11 @@ J.aqw($.Qs)
 s=J.bl($.Qs)
 return A.fi(r,new A.DC(new A.a34(4),new A.Hq(new A.YT(),s,!0,!0,!0,r),r,B.ao,!1,r,r,new A.ET(r),!1,r,s,B.aD,B.h7,r,B.a8,r),B.r,r,r,r,r,220,new A.bw(30,30,30,30),r,r,r,r)}}
 A.YT.prototype={
-$2(a,b){var s,r,q=null,p=J.bf($.Qs,b),o=p.b
-o=A.dp(new A.oz(A.av4(q,q,new A.h3(o==null?"":o,1,q)),q,q),50,50)
-s=A.dp(q,15,q)
-r=p.a
-if(r==null)r=""
-return A.fi(q,A.o2(A.a([o,s,A.e6(r,A.hC().$2$color$fontSize(B.h,16))],t.E),B.ca,B.aH),B.r,q,q,q,q,70,new A.bw(0,10,0,10),q,q,q,q)},
+$2(a,b){var s,r=null,q=J.bf($.Qs,b),p=q.b
+p=A.dp(new A.oz(A.av4(r,r,new A.h3(p==null?"":p,1,r)),r,r),50,50)
+s=q.a
+if(s==null)s=""
+return A.fi(r,A.o2(A.a([p,A.e6(s,A.hC().$2$color$fontSize(B.h,14)),A.dp(r,15,r)],t.E),B.ca,B.aH),B.r,r,r,r,r,70,new A.bw(0,10,0,10),r,r,r,r)},
 $S:411}
 A.v7.prototype={
 an(){return new A.LQ(B.j)}}
