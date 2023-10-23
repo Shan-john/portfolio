@@ -25,6 +25,7 @@ class MYskill extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical: 10),
             height: 70,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 SizedBox(
                     height: 50,
