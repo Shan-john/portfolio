@@ -21,7 +21,7 @@ class MYskill extends StatelessWidget {
           final skill = listofSkill[index];
 
           return Container(
-            color: Colors.red,
+         
             margin: EdgeInsets.symmetric(vertical: 10),
             height: 70,
             child: Column(
@@ -36,6 +36,7 @@ class MYskill extends StatelessWidget {
                   skill.name ?? "",
                   style: ktextstyleopenSans(fontsize: 16),
                 ),
+                Kheight(),
               ],
             ),
           );
