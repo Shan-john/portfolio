@@ -115,7 +115,7 @@ class _project_card extends StatelessWidget {
                       image: NetworkImage("${projectimage}")),
                   borderRadius: BorderRadius.circular(40)),
             ),
-          ),
+         
           Padding(
             padding: const EdgeInsets.all(3.0),
             child: Text(
@@ -135,6 +135,7 @@ class _project_card extends StatelessWidget {
                 ),
               ),
             ),
+),
           ),
           Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
             wedsite != null
