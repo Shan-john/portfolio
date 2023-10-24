@@ -8,7 +8,6 @@ import 'package:protfolio/service/firebase/fireBaseFirestoreHelper.dart';
 
 import '../service/Http service/Onwer_Api_Call.dart';
 
-String backgroundiamge =   "https://i.pinimg.com/564x/33/46/74/33467414e8e293b6aae73dc98f2da65c.jpg";
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
