@@ -14,7 +14,7 @@ class Responsive_Layout_Error_Screen extends StatelessWidget {
         
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: NetworkImage(backgroundiamge))),
+            image: NetworkImage(backgroundiamge),),),
         child: Center(
           child: Text(
             "Turn off \"Desktop veiw\"and switch to \"normal view\"",

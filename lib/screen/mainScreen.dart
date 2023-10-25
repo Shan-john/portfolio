@@ -50,7 +50,8 @@ class _MainscreenState extends State<Mainscreen> {
             NameSection(),
             Kheight(),
             AboutMeSection(),
-            Kheight(),
+            // Kheight(),
+          sectionSpace(),
             Center(
               child: Text(
                 "PORTFOLIO",
@@ -59,7 +60,7 @@ class _MainscreenState extends State<Mainscreen> {
             ),
             Kheight(),
             ProjectScetion(),
-            Kheight(),
+            sectionSpace(),
             ExperienceSection(),
             Kheight(),
             Center(
