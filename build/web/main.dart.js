@@ -65977,7 +65977,7 @@ return A.K(null,r)}})
 return A.L($async$jS,r)},
 T(a){var s,r,q=null,p=A.bY(a,q,t.w).w,o=A.Cl(q,B.c1,new A.fx(u.i,1,q),q,1)
 p=p.a.a/20
-p=A.a([new A.v7(q),A.dp(q,15,q),new A.rr(q),A.dp(q,200,q),A.Br(A.e6("PORTFOLIO",A.hC().$2$color$fontSize(B.h,p)),q,q),A.dp(q,15,q),new A.vP(q),A.dp(q,200,q),new A.D3(q),A.dp(q,15,q),A.Br(A.e6("Skills",A.hC().$2$color$fontSize(B.h,p)),q,q),new A.Ei(q),new A.C_(q)],t.E)
+p=A.a([new A.v7(q),A.dp(q,15,q),new A.rr(q),A.dp(q,20,q),A.Br(A.e6("PORTFOLIO",A.hC().$2$color$fontSize(B.h,p)),q,q),A.dp(q,15,q),new A.vP(q),A.dp(q,20,q),new A.D3(q),A.dp(q,15,q),A.Br(A.e6("Skills",A.hC().$2$color$fontSize(B.h,p)),q,q),new A.Ei(q),new A.C_(q)],t.E)
 s=A.aA([null,0],t.LO,t.S)
 r=!0
 r=r?B.hW:q
