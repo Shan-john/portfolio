@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/models/skill_model/skill_model.dart';
-
+import 'package:protfolio/core/commonFunc.dart';
 class MYskill extends StatelessWidget {
   const MYskill();
 

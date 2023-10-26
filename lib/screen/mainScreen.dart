@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/screen/welcomScreen.dart';
 import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
 import 'package:protfolio/core/constant.dart';
@@ -42,7 +43,7 @@ class _MainscreenState extends State<Mainscreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Container(
+      body: Userdata!.name!=null&& Userdata!.bio != null?Container(
         decoration: BoxDecoration(
             image: DecorationImage(fit: BoxFit.cover, image: NetworkImage(backgroundiamge))),
         child: ListView(
@@ -70,10 +71,10 @@ class _MainscreenState extends State<Mainscreen> {
               ),
             ),
             MYskill(),
-            Contact_Sedction(),
+            ContactSection(),
           ],
         ),
-      ),
+      ):WelcomeScreen()
     );
   }
 }

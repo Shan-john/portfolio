@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
+
+import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/core/constant.dart';
-import 'package:protfolio/service/firebase/fireBaseFirestoreHelper.dart';
+
 
 class ExperienceSection extends StatelessWidget {
   const ExperienceSection({super.key});
