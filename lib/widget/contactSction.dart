@@ -11,7 +11,8 @@ class ContactSection extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final TextEditingController messageController = TextEditingController();
  final TextEditingController emailController = TextEditingController();
-    return Expanded(
+    return Container(
+      color: Colors.red,
       child: Column(
         children: [
           Kheight(),
@@ -42,7 +43,7 @@ class ContactSection extends StatelessWidget {
           Kheight(),
           
         ],
-    
+      
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
 import 'package:protfolio/core/constant.dart';
@@ -39,6 +40,7 @@ class _MainscreenState extends State<Mainscreen> {
   Widget build(BuildContext context) {
   final   size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: HexColor("101630"),
         body:
             //Userdata!.name!=null&& Userdata!.bio != null?
             Container(
