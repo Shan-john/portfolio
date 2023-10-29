@@ -104,7 +104,7 @@ class _project_card extends StatelessWidget {
         children: [
           InkWell(
             onTap: () {
-              launchweb(url: url!);
+           Launch.instance.launchweb(url: url!);
             },
             child: Container(
               width: size.width - 60,
@@ -141,7 +141,7 @@ class _project_card extends StatelessWidget {
             wedsite != null
                 ? InkWell(
                     onTap: () {
-                      launchweb(url: wedsite!);
+                      Launch.instance.launchweb(url: wedsite!);
                     },
                     child: Icon(
                       Icons.link,

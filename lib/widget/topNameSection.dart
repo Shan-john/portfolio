@@ -54,7 +54,7 @@ class _NameSectionState extends State<NameSection> {
             right: 20,
             child: InkWell(
               onTap: () {
-                launchweb(url: Userdata?.htmlUrl ?? "");
+                Launch.instance.launchweb(url: Userdata?.htmlUrl ?? "");
               },
               child: CircleAvatar(
                 radius: 23,
