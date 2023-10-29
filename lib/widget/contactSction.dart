@@ -48,7 +48,9 @@ class ContactSection extends StatelessWidget {
     );
   }
 
-  SizedBox textfeild(Size size,TextEditingController messageController,String hint ) {
+   
+}
+  textfeild(Size size,TextEditingController messageController,String hint ) {
     return SizedBox(
             width: size.width - 100,
             child: TextField(
@@ -66,4 +68,3 @@ class ContactSection extends StatelessWidget {
                     hintText: hint)),
           );
   }
-}
