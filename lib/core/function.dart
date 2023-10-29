@@ -15,13 +15,13 @@ class Launch {
     }
   }
 
-  void launchEmail() async {
-    final Uri _emailLaunchUri = Uri(
-     scheme: 'mailto',
+  void launchEmail({required String yourSubject,required String body}) async {
+    final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
       path: 'shanjohn5308@gmail.com',
       queryParameters: {
-        'subject': 'Your Subject',
-        'body': 'Your email body goes here.',
+        'subject': yourSubject,
+        'body': body,
       },
     );
 
@@ -29,6 +29,6 @@ class Launch {
     // await launch(_emailLaunchUri.toString());
     // } else {
     // }
-    launchUrl(_emailLaunchUri);
+    launchUrl(emailLaunchUri);
   }
 }

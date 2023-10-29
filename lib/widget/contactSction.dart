@@ -6,10 +6,11 @@ import 'package:protfolio/core/function.dart';
 class ContactSection extends StatelessWidget {
   
   const ContactSection({super.key});
+  @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
      TextEditingController messageController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
+  TextEditingController subjectController = TextEditingController();
     return Container(
       color: Colors.purple,
       child: Column(
@@ -19,14 +20,14 @@ class ContactSection extends StatelessWidget {
             "Contact Me",
             style: ktextstyleopenSans(fontsize: size.width / 20),
           ), 
-          textfeild(size,emailController,"email"),
+          textfeild(size,subjectController,"Subject"),
           Kheight(),
           textfeild(size,messageController,"Message"),
           Kheight(),
           TextButton.icon(
             onPressed: () {
-              if (messageController.text.isNotEmpty && emailController.text.isNotEmpty) {
-                 Launch.instance.launchEmail();
+              if (messageController.text.isNotEmpty && subjectController.text.isNotEmpty) {
+                 Launch.instance.launchEmail(body: messageController.text,yourSubject: subjectController.text);
               }
              
             },
