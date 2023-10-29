@@ -5,42 +5,45 @@ import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/core/function.dart';
 
 class ContactSection extends StatelessWidget {
-  final TextEditingController messageController = TextEditingController();
- final TextEditingController emailController = TextEditingController();
-  ContactSection({super.key});
+  
+  const ContactSection({super.key});
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return Column(
-      children: [
-        Kheight(),
-        Text(
-          "Contact Me",
-          style: ktextstyleopenSans(fontsize: size.width / 20),
-        ), 
-        textfeild(size,emailController,"email"),
-        Kheight(),
-        textfeild(size,messageController,"Message"),
-        Kheight(),
-        TextButton.icon(
-          onPressed: () {
-            if (messageController.text.isNotEmpty&& emailController.text.isNotEmpty) {
-               Launch.instance.launchEmail();
-            }
-           
-          },
-          icon: Icon(Icons.send),
-          label: Text("Sent"),
-          style: ButtonStyle(
-            
-            shape: MaterialStateProperty.all(BeveledRectangleBorder()),
-            backgroundColor: MaterialStateProperty.all(
-                const Color.fromARGB(255, 44, 7, 255)),
+    final TextEditingController messageController = TextEditingController();
+ final TextEditingController emailController = TextEditingController();
+    return Expanded(
+      child: Column(
+        children: [
+          Kheight(),
+          Text(
+            "Contact Me",
+            style: ktextstyleopenSans(fontsize: size.width / 20),
+          ), 
+          textfeild(size,emailController,"email"),
+          Kheight(),
+          textfeild(size,messageController,"Message"),
+          Kheight(),
+          TextButton.icon(
+            onPressed: () {
+              if (messageController.text.isNotEmpty&& emailController.text.isNotEmpty) {
+                 Launch.instance.launchEmail();
+              }
+             
+            },
+            icon: Icon(Icons.send),
+            label: Text("Sent"),
+            style: ButtonStyle(
+              
+              shape: MaterialStateProperty.all(BeveledRectangleBorder()),
+              backgroundColor: MaterialStateProperty.all(
+                  const Color.fromARGB(255, 44, 7, 255)),
+            ),
           ),
-        ),
-        Kheight(),
-        
-      ],
-
+          Kheight(),
+          
+        ],
+    
+      ),
     );
   }
 
