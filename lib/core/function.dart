@@ -17,7 +17,7 @@ class Launch {
 
   void launchEmail() async {
     final Uri _emailLaunchUri = Uri(
-      //scheme: 'shanjohn5308@gmail.com',
+     scheme: 'mailto',
       path: 'shanjohn5308@gmail.com',
       queryParameters: {
         'subject': 'Your Subject',
