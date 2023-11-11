@@ -10,20 +10,22 @@ import 'package:protfolio/core/function.dart';
 
 
 class ContactSection extends StatelessWidget { 
-      TextEditingController subjectcontroller =  TextEditingController();
-       TextEditingController composecontroller =  TextEditingController();
-
+    
   ContactSection({super.key});
   @override
  
   Widget build(BuildContext context) {
-    
+      TextEditingController subjectcontroller =  TextEditingController();
+       TextEditingController composecontroller =  TextEditingController();
+
     return  SingleChildScrollView(
       child: Expanded(
         child: Container(
-          height: 300,
+          height: 500,
               padding: EdgeInsets.all(16.0),
-            decoration: BoxDecoration(color: HexColor("4934C1"),
+            decoration: BoxDecoration(
+              //color: HexColor("4934C1"),
+              color: Colors.amber,
                borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight:Radius.circular(30) )
             ),
               child: Column(
