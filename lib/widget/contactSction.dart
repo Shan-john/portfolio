@@ -19,55 +19,58 @@ class ContactSection extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return  SingleChildScrollView(
-      child: Container(
-            padding: EdgeInsets.all(16.0),
-          decoration: BoxDecoration(color: HexColor("4934C1"),
-             borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight:Radius.circular(30) )
-          ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-              "Contact",
-                style: ktextstyleopenSans(fontsize: 25)
-           
+      child: Expanded(
+        child: Container(
+          height: 300,
+              padding: EdgeInsets.all(16.0),
+            decoration: BoxDecoration(color: HexColor("4934C1"),
+               borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight:Radius.circular(30) )
             ),
-            Kheight(),
-                CupertinoTextField(
-                  controller: subjectcontroller,
-                  placeholder: 'Subject',
-                  style: TextStyle(color: CupertinoColors.white),
-                  placeholderStyle: TextStyle(color: CupertinoColors.inactiveGray),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    color: CupertinoColors.black,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                "Contact",
+                  style: ktextstyleopenSans(fontsize: 25)
+             
+              ),
+              Kheight(),
+                  CupertinoTextField(
+                    controller: subjectcontroller,
+                    placeholder: 'Subject',
+                    style: TextStyle(color: CupertinoColors.white),
+                    placeholderStyle: TextStyle(color: CupertinoColors.inactiveGray),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8.0),
+                      color: CupertinoColors.black,
+                    ),
                   ),
-                ),
-    Kheight(),
-                CupertinoTextField(
-                  controller: composecontroller,
-                  placeholder: 'Compose Email',
-                  style: TextStyle(color: CupertinoColors.white),
-                  placeholderStyle: TextStyle(color: CupertinoColors.inactiveGray),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    color: CupertinoColors.black,
+          Kheight(),
+                  CupertinoTextField(
+                    controller: composecontroller,
+                    placeholder: 'Compose Email',
+                    style: TextStyle(color: CupertinoColors.white),
+                    placeholderStyle: TextStyle(color: CupertinoColors.inactiveGray),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8.0),
+                      color: CupertinoColors.black,
+                    ),
                   ),
-                ),
-                Kheight(),
-                TextButton.icon(
-                 label:Text('Sent',style: TextStyle(color:  Color.fromARGB(255, 255, 255, 255),),) ,
-                 icon: const Icon(Icons.send,color: Color.fromARGB(255, 255, 255, 255),),
-                  onPressed: () {
-                  Launch.instance.launchEmail(body: composecontroller.text,yourSubject: subjectcontroller.text);
-                  },
-                 
-                ),
-                Kheight()
-              ],
-            ),
-       
-       
+                  Kheight(),
+                  TextButton.icon(
+                   label:Text('Sent',style: TextStyle(color:  Color.fromARGB(255, 255, 255, 255),),) ,
+                   icon: const Icon(Icons.send,color: Color.fromARGB(255, 255, 255, 255),),
+                    onPressed: () {
+                    Launch.instance.launchEmail(body: composecontroller.text,yourSubject: subjectcontroller.text);
+                    },
+                   
+                  ),
+                  Kheight()
+                ],
+              ),
+         
+         
+        ),
       ),
     );
   }

@@ -12,29 +12,24 @@ import 'package:protfolio/widget/projectslidesection.dart';
 import 'package:protfolio/widget/skillsection.dart';
 import 'package:protfolio/widget/topNameSection.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-class Mainscreen extends StatefulWidget {
+class Mainscreen extends StatelessWidget {
   const Mainscreen({super.key});
   
   @override
-  State<Mainscreen> createState() => _MainscreenState();
-}
+  // void initState() {
+  //   getinforamtion();
+  //   super.initState();
+  // }
 
-class _MainscreenState extends State<Mainscreen> {
-  @override
-  void initState() {
-    getinforamtion();
-    super.initState();
-  }
+  // void getinforamtion() async {
+  //   listofExperience = await FirebasefirestoreHelper.instance.getExperience();
+  //   listofSkill = await FirebasefirestoreHelper.instance.getSkills();
+  //   await fetchGitHubProjects();
 
-  void getinforamtion() async {
-    listofExperience = await FirebasefirestoreHelper.instance.getExperience();
-    listofSkill = await FirebasefirestoreHelper.instance.getSkills();
-    await fetchGitHubProjects();
+  //   Userdata = await getOwnerInformation();
 
-    Userdata = await getOwnerInformation();
-
-    setState(() {});
-  }
+  //   setState(() {});
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -73,18 +68,4 @@ class _MainscreenState extends State<Mainscreen> {
         //:WelcomeScreen()
         );
   }
-
- 
-  
-// List<Widget> mainWidgets = [
-//    NameSection(),
-//     AboutMeSection(),
-    
-//       ProjectScetion(),
-//        ExperienceSection(),
-//                  MYskill(),
-//  ContactSection(),
-    
-// ];
-
 }
