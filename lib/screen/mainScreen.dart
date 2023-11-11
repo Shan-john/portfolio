@@ -44,32 +44,32 @@ class _MainscreenState extends State<Mainscreen> {
         body:
             //Userdata!.name!=null&& Userdata!.bio != null?
             Container(
-      decoration: BoxDecoration(
-          image: DecorationImage(
+                decoration: BoxDecoration(
+                    image: DecorationImage(
               fit: BoxFit.cover, image: NetworkImage(backgroundiamge))),
-      child: ListView(
-        children: [
-          NameSection(),
-          Kheight(),
-          AboutMeSection(),
-          // Kheight(),
-          sectionSpace(),
-          Center(
+                child: ListView(
+                  children: [
+                    NameSection(),
+                    Kheight(),
+                    AboutMeSection(),
+                    // Kheight(),
+                    sectionSpace(),
+                    Center(
             child: titlenameText(size,"PORTFOLIO"),
-          ),
-          Kheight(),
-          ProjectScetion(),
-          sectionSpace(),
-          ExperienceSection(),
-          Kheight(),
-          Center(
+                    ),
+                    Kheight(),
+                    ProjectScetion(),
+                    sectionSpace(),
+                    ExperienceSection(),
+                    Kheight(),
+                    Center(
             child: titlenameText(size,"SKILLS"),
-          ),
-          MYskill(),
-          ContactSection(),
-        ],
-      ),
-    )
+                    ),
+                    MYskill(),
+                    ContactSection(),
+                  ],
+                ),
+              )
         //:WelcomeScreen()
         );
   }
