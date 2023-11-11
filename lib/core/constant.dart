@@ -14,7 +14,13 @@ ktextstylelora({required double fontsize}) =>
     GoogleFonts.lora(color: Colors.white, fontSize: fontsize);
 ktextstyleopenSans({required double fontsize}) =>
     GoogleFonts.openSans(color: Colors.white, fontSize: fontsize);
-
+ Text titlenameText(Size size,String title) {
+    return Text(
+            title,
+              style: TextStyle(decoration:TextDecoration.underline,color: Colors.white, fontSize: 23 ,),
+          //  style: TextStyle(),
+          );
+  }
 
 List<ProjectModel> listOfProjects = [];
 List<ExperienceModel> listofExperience = [];

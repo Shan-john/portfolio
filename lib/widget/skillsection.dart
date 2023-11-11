@@ -30,7 +30,7 @@ class MYskill extends StatelessWidget {
                 SizedBox(
                     height: 50,
                     width: 50,
-                    child: Image.network(skill.image ?? "")),
+                    child: skill.image != null? Image.network(skill.image ?? ""):null),
                
                 Text(
                   skill.name ?? "",

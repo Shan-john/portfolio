@@ -11,7 +11,7 @@ import 'package:protfolio/widget/experiencesectio.dart';
 import 'package:protfolio/widget/projectslidesection.dart';
 import 'package:protfolio/widget/skillsection.dart';
 import 'package:protfolio/widget/topNameSection.dart';
-
+import 'package:webview_flutter/webview_flutter.dart';
 class Mainscreen extends StatefulWidget {
   const Mainscreen({super.key});
   
@@ -55,10 +55,7 @@ class _MainscreenState extends State<Mainscreen> {
           // Kheight(),
           sectionSpace(),
           Center(
-            child: Text(
-              "PORTFOLIO",
-              style: ktextstyleopenSans(fontsize: size.width / 20),
-            ),
+            child: titlenameText(size,"PORTFOLIO"),
           ),
           Kheight(),
           ProjectScetion(),
@@ -66,10 +63,7 @@ class _MainscreenState extends State<Mainscreen> {
           ExperienceSection(),
           Kheight(),
           Center(
-            child: Text(
-              "Skills",
-              style: ktextstyleopenSans(fontsize: size.width / 20),
-            ),
+            child: titlenameText(size,"SKILLS"),
           ),
           MYskill(),
           ContactSection(),
@@ -79,16 +73,18 @@ class _MainscreenState extends State<Mainscreen> {
         //:WelcomeScreen()
         );
   }
+
+ 
   
-List<Widget> mainWidgets = [
-   NameSection(),
-    AboutMeSection(),
+// List<Widget> mainWidgets = [
+//    NameSection(),
+//     AboutMeSection(),
     
-      ProjectScetion(),
-       ExperienceSection(),
-                 MYskill(),
- ContactSection(),
+//       ProjectScetion(),
+//        ExperienceSection(),
+//                  MYskill(),
+//  ContactSection(),
     
-];
+// ];
 
 }

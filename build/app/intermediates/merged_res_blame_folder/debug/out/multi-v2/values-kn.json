@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.protfolio.app-mergeDebugResources-18:/values-kn/values-kn.xml",
+            "outputFile": "com.example.protfolio.app-mergeDebugResources-19:/values-kn/values-kn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\shone\\.gradle\\caches\\transforms-3\\65a68325f9325ad7fc823c147ea90b9f\\transformed\\browser-1.5.0\\res\\values-kn\\values-kn.xml",

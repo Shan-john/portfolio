@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.protfolio.app-mergeDebugResources-18:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.example.protfolio.app-mergeDebugResources-19:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\shone\\.gradle\\caches\\transforms-3\\ca18835448e597da7501661d130ee348\\transformed\\jetified-play-services-base-18.1.0\\res\\values-zh-rTW\\values.xml",

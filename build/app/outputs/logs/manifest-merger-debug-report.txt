@@ -77,6 +77,7 @@ MERGED from [:cloud_firestore] D:\andorid studio\flutter project\protfolio\build
 MERGED from [:firebase_core] D:\andorid studio\flutter project\protfolio\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:url_launcher_android] D:\andorid studio\flutter project\protfolio\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-16:12
 MERGED from [:path_provider_android] D:\andorid studio\flutter project\protfolio\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:webview_flutter_android] D:\andorid studio\flutter project\protfolio\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\shone\.gradle\caches\transforms-3\1a065be9add925bc115ee10bfa98aba3\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\shone\.gradle\caches\transforms-3\8f582784e97fd7672237988f1bfe02cb\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-firestore:24.9.0] C:\Users\shone\.gradle\caches\transforms-3\c4ae387c908be5b84858e9ba61012f8d\transformed\jetified-firebase-firestore-24.9.0\AndroidManifest.xml:2:1-26:12
@@ -94,6 +95,7 @@ MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\s
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\shone\.gradle\caches\transforms-3\949ae848e85b4d52b485ff89edc25307\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\shone\.gradle\caches\transforms-3\c2a29cd6cc04da6fcee97fc024729808\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.browser:browser:1.5.0] C:\Users\shone\.gradle\caches\transforms-3\65a68325f9325ad7fc823c147ea90b9f\transformed\browser-1.5.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.webkit:webkit:1.7.0] C:\Users\shone\.gradle\caches\transforms-3\8d50e198458bbc872409c55036889f88\transformed\webkit-1.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\shone\.gradle\caches\transforms-3\1edd1b9083efcdda4762ccbbbf63f1c0\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\shone\.gradle\caches\transforms-3\bf56bbf5677a97e0de859848802910f4\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\shone\.gradle\caches\transforms-3\972ed2ae158f958ce152ef7df1e44469\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
@@ -185,6 +187,8 @@ MERGED from [:url_launcher_android] D:\andorid studio\flutter project\protfolio\
 MERGED from [:url_launcher_android] D:\andorid studio\flutter project\protfolio\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\andorid studio\flutter project\protfolio\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\andorid studio\flutter project\protfolio\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:webview_flutter_android] D:\andorid studio\flutter project\protfolio\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:webview_flutter_android] D:\andorid studio\flutter project\protfolio\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\shone\.gradle\caches\transforms-3\1a065be9add925bc115ee10bfa98aba3\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\shone\.gradle\caches\transforms-3\1a065be9add925bc115ee10bfa98aba3\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\shone\.gradle\caches\transforms-3\8f582784e97fd7672237988f1bfe02cb\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:19:5-44
@@ -219,6 +223,8 @@ MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\shone\.gradle\
 MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\shone\.gradle\caches\transforms-3\c2a29cd6cc04da6fcee97fc024729808\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:19:5-44
 MERGED from [androidx.browser:browser:1.5.0] C:\Users\shone\.gradle\caches\transforms-3\65a68325f9325ad7fc823c147ea90b9f\transformed\browser-1.5.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.browser:browser:1.5.0] C:\Users\shone\.gradle\caches\transforms-3\65a68325f9325ad7fc823c147ea90b9f\transformed\browser-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.7.0] C:\Users\shone\.gradle\caches\transforms-3\8d50e198458bbc872409c55036889f88\transformed\webkit-1.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.7.0] C:\Users\shone\.gradle\caches\transforms-3\8d50e198458bbc872409c55036889f88\transformed\webkit-1.7.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\shone\.gradle\caches\transforms-3\1edd1b9083efcdda4762ccbbbf63f1c0\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\shone\.gradle\caches\transforms-3\1edd1b9083efcdda4762ccbbbf63f1c0\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\shone\.gradle\caches\transforms-3\bf56bbf5677a97e0de859848802910f4\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
