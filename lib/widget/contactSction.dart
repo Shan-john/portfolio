@@ -8,9 +8,12 @@ import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/core/function.dart';
 
 
+
 class ContactSection extends StatelessWidget { 
-  TextEditingController subjectcontroller =  TextEditingController();
+      TextEditingController subjectcontroller =  TextEditingController();
        TextEditingController composecontroller =  TextEditingController();
+
+  ContactSection({super.key});
   @override
  
   Widget build(BuildContext context) {
@@ -53,8 +56,8 @@ class ContactSection extends StatelessWidget {
                 ),
                 Kheight(),
                 TextButton.icon(
-                 label:Text('Sent',style: TextStyle(color:  Color.fromARGB(153, 233, 233, 233),),) ,
-                 icon: const Icon(Icons.send,color: Color.fromARGB(153, 255, 255, 255),),
+                 label:Text('Sent',style: TextStyle(color:  Color.fromARGB(255, 255, 255, 255),),) ,
+                 icon: const Icon(Icons.send,color: Color.fromARGB(255, 255, 255, 255),),
                   onPressed: () {
                   Launch.instance.launchEmail(body: composecontroller.text,yourSubject: subjectcontroller.text);
                   },
