@@ -114,7 +114,7 @@ class ExperienceCard extends StatelessWidget {
               Kheight(),
               titlenameText(
                 size / 1.2,
-                "Discription",
+                "Description",
               ),
               Kheight(),
               Text(
