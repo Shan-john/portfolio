@@ -37,7 +37,7 @@ class ContactSection extends StatelessWidget {
               customimageButtom(
                 appName: "LinkedIn",
                 iconImage: linkedInImage,
-                ontap: () => Launch.instance.launchLinkedInProfile(id:  linkedInfromfirebase, ),
+                ontap: () => Launch.instance.launchweb(url:  linkedInfromfirebase, ),
               ),
 
              
