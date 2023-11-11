@@ -25,7 +25,6 @@ class ProjectScetion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   
     final size = MediaQuery.of(context).size;
     return SizedBox(
       height: size.width / 1.1,
@@ -87,73 +86,67 @@ class _project_card extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      width: size.width - 60,
-      margin: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-         
+        width: size.width - 60,
+        margin: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(40),
-         
-          )
-          ,
-      child: Column(
-        children: [
-          InkWell(
-            onTap: () {
-           Launch.instance.launchweb(url: url!);
-            },
-            child: Container(
-              width: size.width - 60,
-              height: size.width / 2.5,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: NetworkImage("${projectimage}")),
-                  borderRadius: BorderRadius.circular(40)),
+        ),
+        child: Column(
+          children: [
+            InkWell(
+              onTap: () {
+                Launch.instance.launchweb(url: url!);
+              },
+              child: Container(
+                width: size.width - 60,
+                height: size.width / 2.5,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage("${projectimage}")),
+                    borderRadius: BorderRadius.circular(40)),
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(3.0),
-            child: Text(
-              name!,
-              style: ktextstyleopenSans(fontsize: size.width / 20),
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Text(
+                name!,
+                style: ktextstyleopenSans(fontsize: size.width / 20),
+              ),
             ),
-          ),
-          SizedBox(
-            width: size.width - 70,
-            height: size.width / 5.3,
-            child: SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  discription ?? "no discription",
-                  style: ktextstyleopenSans(fontsize: size.width / 25),
+            SizedBox(
+              width: size.width - 70,
+              height: size.width / 5.3,
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    discription ?? "no discription",
+                    style: ktextstyleopenSans(fontsize: size.width / 25),
+                  ),
                 ),
               ),
             ),
-),
-        
-          Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-            wedsite != null
-                ? InkWell(
-                    onTap: () {
-                      Launch.instance.launchweb(url: wedsite!);
-                    },
-                    child: Icon(
-                      Icons.link,
-                      color: Colors.white,
-                      size: 30,
-                    ),
-                  )
-                : SizedBox(),
-            kwidht(size.width / 30),
-            Text(
-              "🔴 ${language ?? ""} , ${visibility?.toUpperCase()}",
-              style: ktextstyleopenSans(fontsize: size.width / 25),
-            ),
-           ]
-          ),
-  ],
-     ) );
-    
+            Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+              wedsite != null
+                  ? InkWell(
+                      onTap: () {
+                        Launch.instance.launchweb(url: wedsite!);
+                      },
+                      child: Icon(
+                        Icons.link,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                    )
+                  : SizedBox(),
+              kwidht(size.width / 30),
+              Text(
+                "🔴 ${language ?? ""} , ${visibility?.toUpperCase()}",
+                style: ktextstyleopenSans(fontsize: size.width / 25),
+              ),
+            ]),
+          ],
+        ));
   }
 }

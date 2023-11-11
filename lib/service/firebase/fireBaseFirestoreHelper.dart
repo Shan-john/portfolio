@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/models/experience_model/experience_model.dart';
+
 import 'package:protfolio/models/skill_model/skill_model.dart';
 
 class FirebasefirestoreHelper {
@@ -15,32 +16,40 @@ class FirebasefirestoreHelper {
           .map((e) => ExperienceModel.fromJson(e.data()))
           .toList();
 
-  
       return listofexperience;
     } catch (e) {
-    
       return [];
     }
   }
+  Future<void> getOwnerInformation() async {
+    try {
+      DocumentSnapshot documentSnapshot = await FirebaseFirestore.instance
+          .collection('myDetails')
+          .doc('6ndPkZAIgpTSICS4HkFW')
+          .get();
 
- Future<List<SkillModel>> getSkills() async {
+      whatsappnumberfromfirebase = documentSnapshot['phonenumber'];
+      instagrammessageidfromfirebase = documentSnapshot['instagram'];
+      linkedInfromfirebase = documentSnapshot['instagram'];
+     
+    } catch (e) {
+     
+
+      return null;
+    }
+  }
+
+  Future<List<SkillModel>> getSkills() async {
     try {
       QuerySnapshot<Map<String, dynamic>> querySnapshot =
           await _firebaseFirestore.collectionGroup("skill").get();
 
-      List<SkillModel> listofSkill = querySnapshot.docs
-          .map((e) => SkillModel.fromJson(e.data()))
-          .toList();
+      List<SkillModel> listofSkill =
+          querySnapshot.docs.map((e) => SkillModel.fromJson(e.data())).toList();
 
-    
       return listofSkill;
     } catch (e) {
-  
       return [];
     }
   }
-
-
-
-
 }

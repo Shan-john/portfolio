@@ -34,7 +34,7 @@ class ExperienceSection extends StatelessWidget {
                   title: experience.name ?? "",
                   discription: experience.description ?? "",
                   technologyUsed: experience.technologyUsed ?? "",
-                  date: experience.date?? "",
+                  date: experience.date ?? "",
                 );
               },
             ),
@@ -54,7 +54,8 @@ class ExperienceCard extends StatelessWidget {
       {super.key,
       required this.title,
       required this.discription,
-      required this.technologyUsed, required this.date});
+      required this.technologyUsed,
+      required this.date});
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -85,7 +86,7 @@ class ExperienceCard extends StatelessWidget {
       child: SingleChildScrollView(
         child: SizedBox(
           // height: size.width / 1.4,
-           width: size.width - 130,
+          width: size.width - 130,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -100,17 +101,16 @@ class ExperienceCard extends StatelessWidget {
                 ),
               ),
               Kheight(),
-                Text(
-                    date,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: size.width / 30,
-                      fontFamily: 'Inder',
-                      fontWeight: FontWeight.w400,
-                      letterSpacing: 1.20,
-                    ),
-                  ),
-             
+              Text(
+                date,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: size.width / 30,
+                  fontFamily: 'Inder',
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 1.20,
+                ),
+              ),
               Kheight(),
               titlenameText(
                 size / 1.2,
@@ -124,7 +124,7 @@ class ExperienceCard extends StatelessWidget {
                   fontSize: size.width / 30,
                   fontFamily: 'Inder',
                   fontWeight: FontWeight.w400,
-                   height: 1.5,
+                  height: 1.5,
                   letterSpacing: 1.20,
                 ),
               ),
@@ -135,7 +135,7 @@ class ExperienceCard extends StatelessWidget {
                   fontSize: size.width / 30,
                   fontFamily: 'Inder',
                   fontWeight: FontWeight.w400,
-                   height: 1.5,
+                  height: 1.5,
                   letterSpacing: 1.20,
                 ),
               ),

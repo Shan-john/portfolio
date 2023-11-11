@@ -12,9 +12,10 @@ import 'package:protfolio/widget/projectslidesection.dart';
 import 'package:protfolio/widget/skillsection.dart';
 import 'package:protfolio/widget/topNameSection.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+
 class Mainscreen extends StatelessWidget {
   const Mainscreen({super.key});
-  
+
   @override
   // void initState() {
   //   getinforamtion();
@@ -33,38 +34,38 @@ class Mainscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  final   size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: HexColor("101630"),
+        backgroundColor: HexColor("101630"),
         body:
             //Userdata!.name!=null&& Userdata!.bio != null?
             Container(
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-              fit: BoxFit.cover, image: NetworkImage(backgroundiamge))),
-                child: ListView(
-                  children: [
-                    NameSection(),
-                    Kheight(),
-                    AboutMeSection(),
-                    // Kheight(),
-                    sectionSpace(),
-                    Center(
-            child: titlenameText(size,"PORTFOLIO"),
-                    ),
-                    Kheight(),
-                    ProjectScetion(),
-                    sectionSpace(),
-                    ExperienceSection(),
-                    Kheight(),
-                    Center(
-            child: titlenameText(size,"SKILLS"),
-                    ),
-                    MYskill(),
-                    ContactSection(),
-                  ],
-                ),
-              )
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: NetworkImage(backgroundImage))),
+          child: ListView(
+            children: [
+              NameSection(),
+              Kheight(),
+              AboutMeSection(),
+              // Kheight(),
+              sectionSpace(),
+              Center(
+                child: titlenameText(size, "PORTFOLIO"),
+              ),
+              Kheight(),
+              ProjectScetion(),
+              sectionSpace(),
+              ExperienceSection(),
+              Kheight(),
+              Center(
+                child: titlenameText(size, "SKILLS"),
+              ),
+              MYskill(),
+              ContactSection(),
+            ],
+          ),
+        )
         //:WelcomeScreen()
         );
   }

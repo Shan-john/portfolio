@@ -3,7 +3,6 @@ import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/screen/mainScreen.dart';
 
-
 class AboutMeSection extends StatelessWidget {
   const AboutMeSection({super.key});
 
@@ -27,7 +26,6 @@ class AboutMeSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-     
       width: size.width / 2,
       child: Padding(
         padding: const EdgeInsets.all(8.0),

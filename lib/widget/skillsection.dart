@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:protfolio/core/constant.dart';
 
 import 'package:protfolio/core/commonFunc.dart';
+
 class MYskill extends StatelessWidget {
   const MYskill();
 
@@ -21,7 +22,6 @@ class MYskill extends StatelessWidget {
           final skill = listofSkill[index];
 
           return Container(
-         
             margin: EdgeInsets.symmetric(vertical: 10),
             height: 70,
             child: Column(
@@ -30,8 +30,9 @@ class MYskill extends StatelessWidget {
                 SizedBox(
                     height: 50,
                     width: 50,
-                    child: skill.image != null? Image.network(skill.image ?? ""):null),
-               
+                    child: skill.image != null
+                        ? Image.network(skill.image ?? "")
+                        : null),
                 Text(
                   skill.name ?? "",
                   style: ktextstyleopenSans(fontsize: 14),

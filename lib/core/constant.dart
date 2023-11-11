@@ -14,13 +14,17 @@ ktextstylelora({required double fontsize}) =>
     GoogleFonts.lora(color: Colors.white, fontSize: fontsize);
 ktextstyleopenSans({required double fontsize}) =>
     GoogleFonts.openSans(color: Colors.white, fontSize: fontsize);
- Text titlenameText(Size size,String title) {
-    return Text(
-            title,
-              style: TextStyle(decoration:TextDecoration.underline,color: Colors.white, fontSize: 23 ,),
-          //  style: TextStyle(),
-          );
-  }
+Text titlenameText(Size size, String title) {
+  return Text(
+    title,
+    style: TextStyle(
+      decoration: TextDecoration.underline,
+      color: Colors.white,
+      fontSize: 23,
+    ),
+    //  style: TextStyle(),
+  );
+}
 
 List<ProjectModel> listOfProjects = [];
 List<ExperienceModel> listofExperience = [];
@@ -34,5 +38,17 @@ List<String> projectimage = [
   "https://i.pinimg.com/736x/40/bf/50/40bf5022f099e7030c11e17e50f4b3da.jpg",
   "https://i.pinimg.com/564x/90/44/a6/9044a634e09b2a633ff73efad0fdf470.jpg",
 ];
-String backgroundiamge =   "https://i.pinimg.com/564x/33/46/74/33467414e8e293b6aae73dc98f2da65c.jpg";
+String backgroundImage =
+    "https://i.pinimg.com/564x/33/46/74/33467414e8e293b6aae73dc98f2da65c.jpg";
+String emailImage =
+    "https://imgs.search.brave.com/lYV0sA4Bv3Az9qQRj6g5XDprojE3G4YdFxIdL9IRN9U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWdtYWlsLTI5MjM2/NTctMjQxNjY2MC5w/bmc_Zj13ZWJwJnc9/MTI4";
+String instagramImage =
+    "https://imgs.search.brave.com/iJrkEfsQTRVgNwbJ1qS2UGXehMKzMEwqz4Qsgn-gd3E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvNS9JbnN0/YWdyYW0tTG9nby1Q/TkctRnJlZS1Eb3du/bG9hZC5wbmc";
+String whatsAppImage =
+    "https://imgs.search.brave.com/8QoD0teS1jXsP_Y3h-GbSrbkMLoCk_Ape8VRQ2Ds6Ts/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG40/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvc29jaWFsLW1l/ZGlhLTIyMTAvMjQv/V2hhdHNhcHAtNjQu/cG5n";
+String linkedInImage =
+    "https://imgs.search.brave.com/0qtG7pj_TIbAltvyxuKjMZeSEeob_7Izx79mUYoE68s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4z/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvc29jaW9jb25z/LzI1Ni9saW5rZWRp/bi1zb2Npb2Nvbi5w/bmc";
+String whatsappnumberfromfirebase = "";
+String instagrammessageidfromfirebase = "";
 
+String linkedInfromfirebase = "";

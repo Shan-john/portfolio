@@ -8,7 +8,6 @@ import 'package:protfolio/service/firebase/fireBaseFirestoreHelper.dart';
 
 import '../service/Http service/Onwer_Api_Call.dart';
 
-
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
 
@@ -32,26 +31,21 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     Userdata = await getOwnerInformation();
     listofExperience = await FirebasefirestoreHelper.instance.getExperience();
     listofSkill = await FirebasefirestoreHelper.instance.getSkills();
-     
-   
+   await FirebasefirestoreHelper.instance.getOwnerInformation();
+    
     await fetchGitHubProjects();
-
-
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    
       body: Stack(
         children: [
           SizedBox(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             child: Image(
-                fit: BoxFit.fitHeight,
-                image: NetworkImage(backgroundiamge
-                  )),
+                fit: BoxFit.fitHeight, image: NetworkImage(backgroundImage)),
           ),
           Align(
             alignment: Alignment.center,

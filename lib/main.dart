@@ -11,7 +11,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-         // apiKey: "AIzaSyDnZZN4ia94hgY3O6GJvUrd8Rer5YySNvE",
+          // apiKey: "AIzaSyDnZZN4ia94hgY3O6GJvUrd8Rer5YySNvE",
           apiKey: "AIzaSyDbxICtK6YEgICH3oxQg5uIlxHoUkftkfU",
           appId: "1:383938854377:web:37d2aea58c492cf3101f78",
           messagingSenderId: "",
@@ -37,10 +37,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'PROTFOLIO',
-      theme: ThemeData(
-       
-    
-        ),
+      theme: ThemeData(),
       home: Responsive_Layout(
         DesktopBody: Responsive_Layout_Error_Screen(),
         MobielBody: WelcomeScreen(),
