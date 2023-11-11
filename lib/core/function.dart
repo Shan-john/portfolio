@@ -14,6 +14,14 @@ class Launch {
     }
   }
 
+
+  void launchLinkedInProfile({required String id}) async {
+ 
+ final Uri _url =
+        Uri.parse('https://www.linkedin.com/in/${id}');
+    await launchUrl(_url);
+ 
+}
   void launchEmail() async {
     final Uri emailLaunchUri = Uri(
       scheme: 'mailto',
