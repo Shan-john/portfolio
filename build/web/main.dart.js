@@ -66255,7 +66255,7 @@ $.anK=A.xO(m.b.bR(0,"phonenumber"),m.a)
 m=n
 $.an5=A.xO(m.b.bR(0,"instagram"),m.a)
 m=n
-$.anb=A.xO(m.b.bR(0,"instagram"),m.a)
+$.anb=A.xO(m.b.bR(0,"linkedIn"),m.a)
 p=2
 s=6
 break

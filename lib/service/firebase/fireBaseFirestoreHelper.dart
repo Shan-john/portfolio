@@ -21,6 +21,7 @@ class FirebasefirestoreHelper {
       return [];
     }
   }
+
   Future<void> getOwnerInformation() async {
     try {
       DocumentSnapshot documentSnapshot = await FirebaseFirestore.instance
@@ -30,12 +31,9 @@ class FirebasefirestoreHelper {
 
       whatsappnumberfromfirebase = documentSnapshot['phonenumber'];
       instagrammessageidfromfirebase = documentSnapshot['instagram'];
-      linkedInfromfirebase = documentSnapshot['instagram'];
-     
+      linkedInfromfirebase = documentSnapshot['linkedIn'];
     } catch (e) {
-     
-
-      return null;
+      print(e);
     }
   }
 
