@@ -5,23 +5,28 @@ import 'package:protfolio/core/constant.dart';
 
 import 'package:protfolio/core/function.dart';
 
-class ProjectScetion extends StatelessWidget {
+class ProjectScetion extends StatefulWidget {
   ProjectScetion({super.key});
 
   @override
-  // void initState() {
-  //   getinformation();
-  //   super.initState();
-  // }
+  State<ProjectScetion> createState() => _ProjectScetionState();
+}
 
-  // getinformation() async {
-  //   Future.delayed(
-  //     const Duration(seconds: 2),
-  //     () async {
-  //       setState(() {});
-  //     },
-  //   );
-  // }
+class _ProjectScetionState extends State<ProjectScetion> {
+  @override
+  void initState() {
+    getinformation();
+    super.initState();
+  }
+
+  getinformation() async {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () async {
+        setState(() {});
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
