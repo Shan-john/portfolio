@@ -3,24 +3,29 @@ import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/screen/mainScreen.dart';
 
-class AboutMeSection extends StatelessWidget {
+class AboutMeSection extends StatefulWidget {
   const AboutMeSection({super.key});
 
   @override
-  // void initState() {
-  //   getinformation();
-  //   super.initState();
-  // }
+  State<AboutMeSection> createState() => _AboutMeSectionState();
+}
 
-  // getinformation() async {
-  //   Future.delayed(
-  //     const Duration(seconds: 2),
-  //     () async {
-  //       //  Userdata = await getOwnerInformation();
-  //       setState(() {});
-  //     },
-  //   );
-  // }
+class _AboutMeSectionState extends State<AboutMeSection> {
+  @override
+  void initState() {
+    getinformation();
+    super.initState();
+  }
+
+  getinformation() async {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () async {
+      
+        setState(() {});
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
