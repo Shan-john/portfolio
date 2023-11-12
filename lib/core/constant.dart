@@ -13,7 +13,7 @@ import 'package:google_fonts/google_fonts.dart';
 ktextstylelora({required double fontsize}) =>
     GoogleFonts.lora(color: Colors.white, fontSize: fontsize);
 ktextstyleopenSans({required double fontsize}) =>
-    GoogleFonts.openSans(color: Colors.white, fontSize: fontsize);
+    GoogleFonts.openSans(color: Colors.white, fontSize: fontsize,height: 1.5);
 Text titlenameText(Size size, String title) {
   return Text(
     title,

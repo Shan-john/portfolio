@@ -11,7 +11,7 @@ class ExperienceSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return SizedBox(
-      height: size.width / 1.8,
+      height: size.width / 1.5,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

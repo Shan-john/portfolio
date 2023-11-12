@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
@@ -46,22 +47,23 @@ class Mainscreen extends StatelessWidget {
           child: ListView(
             children: [
               NameSection(),
-              Kheight(),
+           
               AboutMeSection(),
-              // Kheight(),
-              sectionSpace(),
+               Gap(180),
+            
               Center(
                 child: titlenameText(size, "PORTFOLIO"),
               ),
-              Kheight(),
+                
               ProjectScetion(),
-              sectionSpace(),
+             Gap(110),
               ExperienceSection(),
-              Kheight(),
+              Gap(180),
               Center(
                 child: titlenameText(size, "SKILLS"),
               ),
               MYskill(),
+                  Gap(180),
               ContactSection(),
             ],
           ),
