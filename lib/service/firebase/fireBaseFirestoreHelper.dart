@@ -32,6 +32,7 @@ class FirebasefirestoreHelper {
       whatsappnumberfromfirebase = documentSnapshot['phonenumber'];
       instagrammessageidfromfirebase = documentSnapshot['instagram'];
       linkedInfromfirebase = documentSnapshot['linkedIn'];
+      aboutMe  = documentSnapshot['aboutMe'];
     } catch (e) {
       print(e);
     }

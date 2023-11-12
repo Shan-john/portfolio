@@ -36,7 +36,7 @@ class AboutMeSection extends StatelessWidget {
           ),
           Kheight(),
           Text(
-            Userdata?.bio.toString() ?? "",
+           aboutMe,
             style: ktextstyleopenSans(fontsize: size.width / 27),
           )
         ]),

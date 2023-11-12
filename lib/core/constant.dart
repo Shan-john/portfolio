@@ -50,5 +50,5 @@ String linkedInImage =
     "https://imgs.search.brave.com/0qtG7pj_TIbAltvyxuKjMZeSEeob_7Izx79mUYoE68s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4z/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvc29jaW9jb25z/LzI1Ni9saW5rZWRp/bi1zb2Npb2Nvbi5w/bmc";
 String whatsappnumberfromfirebase = "";
 String instagrammessageidfromfirebase = "";
-
+String aboutMe = "";
 String linkedInfromfirebase = "";
