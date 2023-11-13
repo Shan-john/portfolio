@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/core/constant.dart';
-import 'package:protfolio/screen/mainScreen.dart';
+
 
 class AboutMeSection extends StatefulWidget {
   const AboutMeSection({super.key});
