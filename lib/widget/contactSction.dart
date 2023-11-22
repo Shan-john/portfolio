@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:fluttericon/font_awesome_icons.dart';
-import 'package:gap/gap.dart';
+
 import 'package:hexcolor/hexcolor.dart';
 
 import 'package:protfolio/core/commonFunc.dart';

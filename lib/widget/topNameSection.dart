@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/core/function.dart';
-import 'package:protfolio/models/user_model/user_model.dart';
 
-import 'package:url_launcher/url_launcher.dart';
 
 class NameSection extends StatefulWidget {
   const NameSection({super.key});

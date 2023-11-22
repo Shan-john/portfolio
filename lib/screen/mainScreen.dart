@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:protfolio/core/commonFunc.dart';
-import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
+
 import 'package:protfolio/core/constant.dart';
-import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
-import 'package:protfolio/service/firebase/fireBaseFirestoreHelper.dart';
+
 import 'package:protfolio/widget/AboutMe.dart';
 import 'package:protfolio/widget/contactSction.dart';
 import 'package:protfolio/widget/experiencesectio.dart';
 import 'package:protfolio/widget/projectslidesection.dart';
 import 'package:protfolio/widget/skillsection.dart';
 import 'package:protfolio/widget/topNameSection.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+
 
 class Mainscreen extends StatelessWidget {
   const Mainscreen({super.key});
@@ -46,24 +44,24 @@ class Mainscreen extends StatelessWidget {
                   fit: BoxFit.cover, image: NetworkImage(backgroundImage))),
           child: ListView(
             children: [
-              NameSection(),
+           const   NameSection(),
            
-              AboutMeSection(),
-               Gap(180),
+             const AboutMeSection(),
+            const   Gap(180),
             
               Center(
                 child: titlenameText(size, "PORTFOLIO"),
               ),
                 
               ProjectScetion(),
-             Gap(110),
-              ExperienceSection(),
-              Gap(180),
+           const  Gap(110),
+            const  ExperienceSection(),
+            const  Gap(180),
               Center(
                 child: titlenameText(size, "SKILLS"),
               ),
-              MYskill(),
-                  Gap(180),
+            const  MYskill(),
+            const   Gap(180),
               ContactSection(),
             ],
           ),

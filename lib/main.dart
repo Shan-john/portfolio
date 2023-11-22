@@ -1,8 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
+
 import 'package:protfolio/screen/Responxive_layout_Error.dart';
-import 'package:protfolio/screen/mainScreen.dart';
+
 import 'package:flutter/services.dart';
 import 'package:protfolio/screen/responsive_Layout.dart';
 import 'package:protfolio/screen/welcomScreen.dart';

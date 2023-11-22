@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:protfolio/screen/Responxive_layout_Error.dart';
-import 'package:protfolio/screen/welcomScreen.dart';
 
 class Responsive_Layout extends StatelessWidget {
   final Widget MobielBody;
