@@ -39,7 +39,7 @@ List<String> projectimage = [
   "https://i.pinimg.com/564x/90/44/a6/9044a634e09b2a633ff73efad0fdf470.jpg",
 ];
 String backgroundImage =
-    "https://i.pinimg.com/564x/33/46/74/33467414e8e293b6aae73dc98f2da65c.jpg";
+    "https://i.pinimg.com/564x/8b/22/b7/8b22b7b0b2535d3efbf35fdaa7c44649.jpg";
 String emailImage =
     "https://imgs.search.brave.com/lYV0sA4Bv3Az9qQRj6g5XDprojE3G4YdFxIdL9IRN9U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWdtYWlsLTI5MjM2/NTctMjQxNjY2MC5w/bmc_Zj13ZWJwJnc9/MTI4";
 String instagramImage =

@@ -16,7 +16,7 @@ Future<void> main() async {
           appId: "1:383938854377:web:37d2aea58c492cf3101f78",
           messagingSenderId: "",
           projectId: "personalprotfolio-419e4"));
-  SystemChrome.setPreferredOrientations([
+            SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp, // Allow only portrait orientation
   ]);
 
