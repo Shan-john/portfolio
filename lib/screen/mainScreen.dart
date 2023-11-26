@@ -41,27 +41,28 @@ class Mainscreen extends StatelessWidget {
             Container(
           decoration: BoxDecoration(
               image: DecorationImage(
+                
                   fit: BoxFit.cover, image: NetworkImage(backgroundImage))),
           child: ListView(
             children: [
            const   NameSection(),
            
              const AboutMeSection(),
-            const   Gap(180),
+            const   Gap(250),
             
               Center(
                 child: titlenameText(size, "PORTFOLIO"),
               ),
                 
               ProjectScetion(),
-           const  Gap(110),
+           const  Gap(150),
             const  ExperienceSection(),
-            const  Gap(180),
+            const   Gap(200),
               Center(
                 child: titlenameText(size, "SKILLS"),
               ),
             const  MYskill(),
-            const   Gap(180),
+            const   Gap(250),
               ContactSection(),
             ],
           ),

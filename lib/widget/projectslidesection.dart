@@ -107,11 +107,17 @@ class _project_card extends StatelessWidget {
                 height: size.width / 2.5,
                 decoration: BoxDecoration(
                     image: DecorationImage(
+                      colorFilter: ColorFilter.mode(
+      
+            Color.fromARGB(120, 0, 0, 0), // Set the color you want to use
+            BlendMode.softLight,
+          ),
                         fit: BoxFit.cover,
                         image: NetworkImage("${projectimage}")),
                     borderRadius: BorderRadius.circular(40)),
+                    child: Icon(Icons.touch_app_outlined,size: 100,color: Color.fromARGB(75, 255, 255, 255),),
               ),
-            ),
+            ), 
             Padding(
               padding: const EdgeInsets.all(3.0),
               child: Text(

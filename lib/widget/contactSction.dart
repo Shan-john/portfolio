@@ -16,7 +16,7 @@ class ContactSection extends StatelessWidget {
      height: 180,
       padding: EdgeInsets.all(16.0),
       decoration: BoxDecoration(
-          color: HexColor("4934C1"), // color: Colors.amber,
+          color: HexColor("15132B"), 
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(30), topRight: Radius.circular(30))),
       child: Column(
@@ -87,7 +87,7 @@ class ContactSection extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
-                shadows: [
+                shadows: const [
                   BoxShadow(
                     color: Color(0x3F3E355A),
                     blurRadius: 5,

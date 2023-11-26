@@ -25,7 +25,7 @@ class ExperienceSection extends StatelessWidget {
           Kheight(),
           Expanded(
             child: ListView.builder(
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               scrollDirection: Axis.horizontal,
               itemCount: listofExperience.length,
               itemBuilder: (context, index) {
@@ -60,23 +60,23 @@ class ExperienceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       width: size.width - 80,
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: ShapeDecoration(
-        color: HexColor("101630"),
+        color:  HexColor("15132B").withOpacity(0.1), 
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(38),
         ),
-        shadows: [
+        shadows:  [
           BoxShadow(
-            color: Color(0x3F3E355A),
+            color: Color(0x3F3E355A).withOpacity(0.1), 
             blurRadius: 5,
             offset: Offset(2, 2),
             spreadRadius: 0,
           ),
           BoxShadow(
-            color: Color(0xFF4F349B),
+            color: Color(0xFF4F349B).withOpacity(0.1), 
             blurRadius: 5,
             offset: Offset(-2, -2),
             spreadRadius: 0,
