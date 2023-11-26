@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'PROTFOLIO',
+      title: 'PORTFOLIO',
       theme: ThemeData(),
       home: Responsive_Layout(
         DesktopBody: Responsive_Layout_Error_Screen(),

@@ -67145,7 +67145,7 @@ A.vB.prototype={
 ao(){return new A.Mi(B.j)}}
 A.Mi.prototype={
 U(a){var s=null
-return new A.vm(new A.Hc(new A.xY(s),new A.Hd(s),s),"PROTFOLIO",A.alk(s,s),!1,s)}}
+return new A.vm(new A.Hc(new A.xY(s),new A.Hd(s),s),"PORTFOLIO",A.alk(s,s),!1,s)}}
 A.kx.prototype={
 jV(){var s=this
 return A.aw(["name",s.a,"description",s.b,"date",s.c,"technologyUsed",s.d],t.N,t.z)}}
