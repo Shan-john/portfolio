@@ -33,7 +33,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     listofSkill = await FirebasefirestoreHelper.instance.getSkills();
    await FirebasefirestoreHelper.instance.getOwnerInformation();
     
-    await fetchGitHubProjects();
+    await fetchGitHubProjects().then((value){
+      setState(() {
+        
+      });
+    });
   }
 
   @override

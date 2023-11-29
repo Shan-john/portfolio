@@ -5,29 +5,10 @@ import 'package:protfolio/core/constant.dart';
 
 import 'package:protfolio/core/function.dart';
 
-class ProjectScetion extends StatefulWidget {
+class ProjectScetion extends StatelessWidget {
   ProjectScetion({super.key});
 
-  @override
-  State<ProjectScetion> createState() => _ProjectScetionState();
-}
-
-class _ProjectScetionState extends State<ProjectScetion> {
-  @override
-  void initState() {
-    getinformation();
-    super.initState();
-  }
-
-  getinformation() async {
-    Future.delayed(
-      const Duration(seconds: 2),
-      () async {
-        setState(() {});
-      },
-    );
-  }
-
+  // @override
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
