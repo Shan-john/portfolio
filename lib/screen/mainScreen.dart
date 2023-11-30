@@ -22,22 +22,22 @@ class Mainscreen extends StatefulWidget {
 }
 
 class _MainscreenState extends State<Mainscreen> {
-  @override
-  void initState() {
-    getinforamtion();
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   getinforamtion();
+  //   super.initState();
+  // }
 
-  void getinforamtion() async {
-    listofExperience = await FirebasefirestoreHelper.instance.getExperience();
-    listofSkill = await FirebasefirestoreHelper.instance.getSkills();
-    await fetchGitHubProjects();
+  // void getinforamtion() async {
+  //   listofExperience = await FirebasefirestoreHelper.instance.getExperience();
+  //   listofSkill = await FirebasefirestoreHelper.instance.getSkills();
+  //   await fetchGitHubProjects();
 
-    Userdata = await getOwnerInformation().then((value) {
-      setState(() {});
-      return null;
-    });
-  }
+  //   Userdata = await getOwnerInformation().then((value) {
+  //     setState(() {});
+  //     return null;
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
