@@ -6,7 +6,7 @@ import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/core/function.dart';
 import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
 
-class ProjectScetion extends StatefulWidget {
+class ProjectScetion extends StatelessWidget {
   ProjectScetion({super.key});
 
   @override

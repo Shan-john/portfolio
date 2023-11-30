@@ -3,6 +3,9 @@ import 'package:gap/gap.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 import 'package:protfolio/core/constant.dart';
+import 'package:protfolio/service/Http%20service/Onwer_Api_Call.dart';
+import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
+import 'package:protfolio/service/firebase/fireBaseFirestoreHelper.dart';
 
 import 'package:protfolio/widget/AboutMe.dart';
 import 'package:protfolio/widget/contactSction.dart';
@@ -11,25 +14,30 @@ import 'package:protfolio/widget/projectslidesection.dart';
 import 'package:protfolio/widget/skillsection.dart';
 import 'package:protfolio/widget/topNameSection.dart';
 
-
-class Mainscreen extends StatelessWidget {
+class Mainscreen extends StatefulWidget {
   const Mainscreen({super.key});
 
   @override
-  // void initState() {
-  //   getinforamtion();
-  //   super.initState();
-  // }
+  State<Mainscreen> createState() => _MainscreenState();
+}
 
-  // void getinforamtion() async {
-  //   listofExperience = await FirebasefirestoreHelper.instance.getExperience();
-  //   listofSkill = await FirebasefirestoreHelper.instance.getSkills();
-  //   await fetchGitHubProjects();
+class _MainscreenState extends State<Mainscreen> {
+  @override
+  void initState() {
+    getinforamtion();
+    super.initState();
+  }
 
-  //   Userdata = await getOwnerInformation();
+  void getinforamtion() async {
+    listofExperience = await FirebasefirestoreHelper.instance.getExperience();
+    listofSkill = await FirebasefirestoreHelper.instance.getSkills();
+    await fetchGitHubProjects();
 
-  //   setState(() {});
-  // }
+    Userdata = await getOwnerInformation().then((value) {
+      setState(() {});
+      return null;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -41,28 +49,24 @@ class Mainscreen extends StatelessWidget {
             Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-                
                   fit: BoxFit.cover, image: NetworkImage(backgroundImage))),
           child: ListView(
             children: [
-           const   NameSection(),
-           
-             const AboutMeSection(),
-            const   Gap(250),
-            
+              const NameSection(),
+              const AboutMeSection(),
+              const Gap(250),
               Center(
                 child: titlenameText(size, "PORTFOLIO"),
               ),
-                
               ProjectScetion(),
-           const  Gap(150),
-            const  ExperienceSection(),
-            const   Gap(200),
+              const Gap(150),
+              const ExperienceSection(),
+              const Gap(200),
               Center(
                 child: titlenameText(size, "SKILLS"),
               ),
-            const  MYskill(),
-            const   Gap(250),
+              const MYskill(),
+              const Gap(250),
               ContactSection(),
             ],
           ),
