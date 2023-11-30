@@ -71,10 +71,12 @@ class _NameSectionState extends State<NameSection> {
           Positioned(
               top: size.width / 3.6,
               left: size.width / 10,
-              child: Text(
-                Userdata?.name == null ?  "": Userdata!.name.toString(),
+              child: 
+                Userdata?.name != null ? Text(
+                Userdata!.name.toString(),
                 style: ktextstylelora(fontsize: size.width / 11),
-              ))
+              ): const Text("Loading")
+              )
         ],
       ),
     );
