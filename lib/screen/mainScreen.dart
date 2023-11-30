@@ -14,30 +14,8 @@ import 'package:protfolio/widget/projectslidesection.dart';
 import 'package:protfolio/widget/skillsection.dart';
 import 'package:protfolio/widget/topNameSection.dart';
 
-class Mainscreen extends StatefulWidget {
+class Mainscreen extends StatelessWidget {
   const Mainscreen({super.key});
-
-  @override
-  State<Mainscreen> createState() => _MainscreenState();
-}
-
-class _MainscreenState extends State<Mainscreen> {
-  // @override
-  // void initState() {
-  //   getinforamtion();
-  //   super.initState();
-  // }
-
-  // void getinforamtion() async {
-  //   listofExperience = await FirebasefirestoreHelper.instance.getExperience();
-  //   listofSkill = await FirebasefirestoreHelper.instance.getSkills();
-  //   await fetchGitHubProjects();
-
-  //   Userdata = await getOwnerInformation().then((value) {
-  //     setState(() {});
-  //     return null;
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {
