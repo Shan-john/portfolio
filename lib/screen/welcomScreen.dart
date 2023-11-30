@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:protfolio/core/constant.dart';
 import 'package:protfolio/screen/mainScreen.dart';
@@ -31,9 +30,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     Userdata = await getOwnerInformation();
     listofExperience = await FirebasefirestoreHelper.instance.getExperience();
     listofSkill = await FirebasefirestoreHelper.instance.getSkills();
-   await FirebasefirestoreHelper.instance.getOwnerInformation();
-    
-    await fetchGitHubProjects();
+    await FirebasefirestoreHelper.instance.getOwnerInformation();
+
+    await fetchGitHubProjects().then((value) {
+       setState(() {});
+      return null;
+    });
+   
   }
 
   @override

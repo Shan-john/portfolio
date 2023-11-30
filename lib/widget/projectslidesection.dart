@@ -4,6 +4,7 @@ import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/core/constant.dart';
 
 import 'package:protfolio/core/function.dart';
+import 'package:protfolio/service/Http%20service/Project_ApiCall.dart';
 
 class ProjectScetion extends StatefulWidget {
   ProjectScetion({super.key});
@@ -23,6 +24,10 @@ class _ProjectScetionState extends State<ProjectScetion> {
     Future.delayed(
       const Duration(seconds: 2),
       () async {
+         await fetchGitHubProjects().then((value) {
+       setState(() {});
+      return null;
+    });
         setState(() {});
       },
     );
