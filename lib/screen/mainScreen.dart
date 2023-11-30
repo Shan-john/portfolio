@@ -35,6 +35,7 @@ class _MainscreenState extends State<Mainscreen> {
 
     Userdata = await getOwnerInformation().then((value) {
       setState(() {});
+      return null;
     });
   }
 
