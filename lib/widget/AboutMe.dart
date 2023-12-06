@@ -17,16 +17,14 @@ class _AboutMeSectionState extends State<AboutMeSection> {
   }
 
   getinformation() async {
-    int i = 0;
-    while (i < 3) {
+    
       Future.delayed(
         const Duration(seconds: 2),
         () async {
           setState(() {});
         },
       );
-      i++;
-    }
+      
   }
 
   @override
