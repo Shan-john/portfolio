@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:protfolio/core/commonFunc.dart';
 import 'package:protfolio/core/constant.dart';
 
-
 class AboutMeSection extends StatefulWidget {
   const AboutMeSection({super.key});
 
@@ -18,13 +17,16 @@ class _AboutMeSectionState extends State<AboutMeSection> {
   }
 
   getinformation() async {
-    Future.delayed(
-      const Duration(seconds: 2),
-      () async {
-      
-        setState(() {});
-      },
-    );
+    int i = 0;
+    while (i < 3) {
+      Future.delayed(
+        const Duration(seconds: 2),
+        () async {
+          setState(() {});
+        },
+      );
+      i++;
+    }
   }
 
   @override
@@ -41,7 +43,7 @@ class _AboutMeSectionState extends State<AboutMeSection> {
           ),
           Kheight(),
           Text(
-           aboutMe,
+            aboutMe,
             style: ktextstyleopenSans(fontsize: size.width / 27),
           )
         ]),

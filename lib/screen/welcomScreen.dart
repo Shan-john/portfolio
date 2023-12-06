@@ -39,11 +39,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
    
    await FirebasefirestoreHelper.instance.getOwnerInformation();
     
-    await fetchGitHubProjects().then((value){
-      setState(() {
-        
-      });
-    });
   }
 
   @override
