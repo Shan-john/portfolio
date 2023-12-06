@@ -28,15 +28,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
 
   void getinformation() async {
     Userdata = await getOwnerInformation();
-    listofExperience =
-        await FirebasefirestoreHelper.instance.getExperience().then((value) {
-    return [];
-    });
-    listofSkill =
-        await FirebasefirestoreHelper.instance.getSkills().then((value) {
-      setState(() {});
-      return [];
-    });
+    listofExperience = await FirebasefirestoreHelper.instance.getExperience();
+    listofSkill = await FirebasefirestoreHelper.instance.getSkills();
     await FirebasefirestoreHelper.instance.getOwnerInformation().then((value) {
       setState(() {});
       return null;
